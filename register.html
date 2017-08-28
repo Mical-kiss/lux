@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="rec/fonts/iconfont.css">
+    <link rel="stylesheet" href="rec/css/ba.css">
+    <link rel="stylesheet" href="rec/scss/common.css">
+    <link rel="stylesheet" href="rec/scss/register.css">
+
+    <script src="rec/js/jquery-1.11.0.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="setting1 clearfix">
+        <h1 class="flt"><a href="index.html"><img src="rec/images/logo.jpg" alt=""></a></h1>
+        <p>注册第五大道</p>
+        <i class="iconfont icon-shake frt">热线电话:1234567888</i>
+    </div>
+</header>
+<div class="main">
+    <div class="setting1 clearfix">
+        <form class="clearfix form1">
+            <h2><p>使用手机注册</p></h2>
+            <label for="cellNum" >你的手机号：</label>
+            <input type="text" id="cellNum" autofocus="autofocus">
+            <input type="button" id="getNum" value="获取验证码"><br>
+            <label for="verifyNum">手机号验证码：</label>
+            <input type="text" id="verifyNum"><br>
+            <label for="password">密码：</label>
+            <input type="password" id="password"><br>
+            <label for="pswForsure">确认密码：</label>
+            <input type="password" id="pswForsure"><br>
+            <p>
+                <input type="checkbox" value="aaa" id="access">我已阅读并同意《第五大道商城服务条款》<br>
+            </p>
+            <p>
+                <input id="submit" type="button" value="注册">
+            </p>
+
+        </form>
+    </div>
+</div>
+
+<div class="link"></div>
+<div class="cover"></div>
+<div class="getNumBox">
+    <h2>短信验证码获取  <i class="iconfont icon-close frt closeI"></i></h2>
+    <form class="form2">
+        <p>
+            <label>*我的手机号</label>
+            <input type="text">请输入你的手机号
+        </p>
+        <p>
+            <label>*</label>
+            <span id="randomNum"></span> <a id="reRandomNum">看不清？</a>
+        </p>
+        <p>
+            <label>*识别码</label>
+            <input id='inputNum' type="text">输入图片识别码
+        </p>
+        <input id="submitForNum" type="button" value="获取短信验证码">
+
+    </form>
+</div>
+<script src="rec/js/register.js"></script>
+</body>
+</html>

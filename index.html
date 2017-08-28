@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>第五大道奢侈品</title>
+	<link rel="stylesheet" type="text/css" href="rec/fonts/iconfont.css">
+	<link rel="stylesheet" href="rec/css/ba.css">
+	<link rel="stylesheet" href="rec/scss/style.css">
+	<link rel="stylesheet" href="rec/scss/common.css">
+    <script src="rec/js/jquery-1.11.0.js"></script>
+	<script src="rec/js/template.js"></script>
+	<!--<script src="rec/js/index.js"></script>-->
+</head>
+<body>
+	<div class="topContent">
+	</div>
+
+	<nav>
+		<div class="setting clearfix">
+			<ul class="ul_top flt clearfix">
+				<li>
+					<a href="javascript:0;" class="active">商品分类</a>
+					<ul class="ul_sub">
+						<script id="navTop" type="text/html">
+							{{each subNavList as value i}}
+							<li>
+								<a href="{{value.link}}">
+									<i class="iconfont icon-collection_fill"></i>{{value.title}}<i class="iconfont icon-enter frt"></i>
+								</a>
+							</li>
+							{{/each}}
+						</script>
+						<!--<li>
+							<a href="#">
+                                <i class="iconfont icon-collection_fill"></i>
+                                推荐品牌
+                                <i class="iconfont icon-enter frt"></i>
+							</a>
+                            <ul class="ul_detail">
+                                <li class="clearfix">
+                                    <div class="flt">
+                                        <a href="#">国际高端</a>
+                                    </div>
+                                    <div class="frt">
+                                        <a href="index.html">Louis/LV</a>
+                                        <a href="#">Chanel</a>
+                                        <a href="#">Prada</a>
+                                        <a href="#">Fendi</a>
+                                        <a href="#">Fendi</a>
+                                        <a href="#">Fendi</a>
+                                        <a href="#">Fendi</a>
+                                        <a href="#">Fendi</a>
+                                        <a href="#">Fendi</a>
+                                        <a href="#">Fendi</a>
+                                        <a href="#">Fendi</a>
+                                        <a href="#">Fendi</a>
+                                        <a href="#">Fendi</a>
+                                    </div>
+
+                                </li>
+                            </ul>
+						</li>
+						<li>
+							<a href="#">
+                                <i class="iconfont icon-collection_fill"></i>箱包<i class="iconfont icon-enter frt"></i>
+                            </a>
+						</li>
+						<li>
+							<a href="#"><i class="iconfont icon-collection_fill"></i>美妆<i class="iconfont icon-enter frt"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="iconfont icon-collection_fill"></i>服饰<i class="iconfont icon-enter frt"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="iconfont icon-collection_fill"></i>腕表<i class="iconfont icon-enter frt"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="iconfont icon-collection_fill"></i>配饰<i class="iconfont icon-enter frt"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="iconfont icon-collection_fill"></i>鞋靴<i class="iconfont icon-enter frt"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="iconfont icon-collection_fill"></i>母婴<i class="iconfont icon-enter frt"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="iconfont icon-collection_fill"></i>美酒<i class="iconfont icon-enter frt"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="iconfont icon-collection_fill"></i>美食<i class="iconfont icon-enter frt"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="iconfont icon-collection_fill"></i>家具<i class="iconfont icon-enter frt"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="iconfont icon-collection_fill"></i>电子<i class="iconfont icon-enter frt"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="iconfont icon-collection_fill"></i>办公<i class="iconfont icon-enter frt"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="iconfont icon-collection_fill"></i>礼品<i class="iconfont icon-enter frt"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="iconfont icon-collection_fill"></i>海外馆<i class="iconfont icon-enter frt"></i></a>
+                        </li>-->
+					</ul>
+				</li>
+				<li><a href="#">品牌</a></li>
+				<li><a href="#">最新</a></li>
+				<li><a href="#">女士</a></li>
+				<li><a href="#">男士</a></li>
+				<li><a href="#">生活馆</a></li>
+				<li><a href="#">海外馆</a></li>
+				<li><a href="#">时尚</a></li>
+				<li><a href="#">特惠</a></li>
+				<li><a href="#">礼品区</a></li>
+				<li>
+					<a href="#">
+						<i class="iconfont icon-coordinates_fill"></i>到店
+					</a>
+				</li>
+				<div class="ul_detail">
+					<script id="detailNav" type="text/html">
+						{{each detailNav as value}}
+						<div>
+							{{each value as data1 i}}
+							<dl>
+								{{if data1.detailTitle}}
+								<dt>
+									<a href="#">{{data1.detailTitle}}</a>
+								</dt>
+								{{/if}}
+
+								{{if data1.detailList}}
+								<dd>
+									{{each data1.detailList as data2}}
+									<a href="#">{{data2.list}}</a>
+									{{/each}}
+								</dd>
+								{{/if}}
+
+								{{if data1.detailBtn}}
+								<dt class="btn">
+									{{each data1.detailBtn as data3}}
+									<a href="#" >{{data3.list}}</a>
+									{{/each}}
+								</dt>
+								{{/if}}
+							</dl>
+							{{/each}}
+						</div>
+
+						{{/each}}
+					</script>
+				</div>
+			</ul>
+            <ul class="icon_wrap frt">
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-dynamic"></i>
+                        正牌授权，官方认证
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-dynamic"></i>
+                        尊享品牌会员服务
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-dynamic"></i>
+                        商务部诚信示范企业
+                    </a>
+                </li>
+            </ul>
+
+		</div>
+	</nav>
+    <div class="banner">
+        <div class="content">
+            <ul class="slidImg">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+            </ul>
+            <ul class="slidNav">
+                <li style="background: red"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="sliderBtn">
+                <span class="first">&lt;</span>
+                <span class="last">&gt;</span>
+            </div>
+        </div>
+    </div>
+	<div class="sid_bar">
+		<ul class="sid_nav1">
+			<li><i class="iconfont icon-service_fill"></i></li>
+			<li><i class="iconfont icon-coupons_fill"></i></li>
+			<li><i class="iconfont icon-like_fill"></i></li>
+			<li><i class="iconfont icon-mine_fill"></i></li>
+		</ul>
+		<ul class="sid_nav2">
+			<li><i class="iconfont icon-wangwang"></i></li>
+			<li><i class="iconfont icon-brush_fill"></i></li>
+			<li><i class="iconfont icon-shake"></i></li>
+			<li><i class="iconfont icon-packup"></i></li>
+		</ul>
+		<div class="sid_car" style="display: block;">
+			<h3>购物袋 <i class="iconfont icon-close"></i></h3>
+		</div>
+		<div class="sid_asset">
+			<h3>我的资产 <i class="iconfont icon-close"></i></h3>
+		</div>
+		<div class="sid_favor">
+			<h3>我喜欢的商品 <i class="iconfont icon-close"></i></h3>
+		</div>
+	</div>
+	<div class="loginBox">
+		<h3>登录第五大道 <i class="iconfont icon-close"></i></h3>
+		<form>
+			<label>登录用户名:</label><br>
+			<input type="text">
+			<label>登录密码:</label><br>
+			<input type="password">
+			<input type="button" value="登录" onclick="verify()">
+			<p class="clearfix"><a class="flt" href="#">免费注册</a> <a class="frt" href="#">忘记登录密码?</a></p>
+			<div>
+				<p>合作网站登录：</p>
+				<a href="#">QQ</a>
+				<a href="#">新浪微博</a>
+				<a href="#">微信登录</a>
+			</div>
+		</form>
+
+	</div>
+	<div class="main">
+		<div class="setting">
+			<div class="flagship_title">
+				<img src="rec/images/mainx_brandship.png" alt="">
+			</div>
+			<ul class="flagship_list">
+				<scirpt id="flagship1" type="text/html">
+					{{each flagship as value}}
+						<li>
+							<a href="#">
+								<img data-src={{value.src}} alt="" />
+							</a>
+							<div class="flagship_box">
+								<img data-src={{value.smallSrc}} />
+								<br>
+								<span falgship_line></span>
+								<p>{{value.cName}}</p>
+								<p>{{value.eName}}</p>
+							</div>
+						</li>
+					{{/each}}
+				</scirpt>
+			</ul>
+			<div class="hotStore_title">
+				<img src="rec/images/hotstore_t.jpg" alt="">
+			</div>
+			<ul class="hotStore_list">
+				<scrip id="hotStore" type="text/html">
+					{{each hotStore as value}}
+					<li>
+						<img src="{{value.src}}" alt="sorry">
+						<div class="hotStore_box">{{value.title}}</div>
+						<span class="topLine"></span>
+						<span class="bottomLine"></span>
+						<span class="leftLine"></span>
+						<span class="rightLine"></span>
+					</li>
+					
+					{{/each}}
+				</scrip>
+			</ul>
+            <div class="storeSame_title">
+                <img src="rec/images/storesametitle.jpg" alt="">
+            </div>
+            <ul class="storeSame_list clearfix">
+                <span class="active">热卖品牌</span>
+                <span>新品推荐</span>
+                <span>明星同款</span>
+            </ul>
+            <ul class="storeSame_content clearfix">
+                <script id="storeSameContent" type="text/html">
+                    {{each stormSame as value}}
+                        <li>
+
+                            {{each value as item i}}
+                                {{if i==0}}
+                                <div class="stormSame_left flt">
+                                    <a href="#"><img src="{{item.src}}" alt=""></a>
+                                </div>
+
+                                {{else}}
+                                <div class="stormSame_right flt">
+                                    {{each item as item1}}
+                                        <div class="stormSameBox">
+                                            <div class="stormSameBoxTxt">
+                                                <p>{{item1.titleA}}</p>
+                                                <p>{{item1.titleC}}</p>
+                                                <p>￥{{item1.price}}</p>
+                                            </div>
+                                            <div class="stormSameBoxPic">
+                                                <a href="#"><img src="{{item1.src}}" alt=""></a>
+                                            </div>
+                                        </div>
+                                    {{/each}}
+                                </div>
+                                {{/if}}
+                            {{/each}}
+                        </li>
+                    {{/each}}
+                </script>
+                <!--<li>
+                    <div class="stormSame_left flt">
+                        <a href="#"><img src="rec/images/150329283294_366x515.jpg" alt=""></a>
+                    </div>
+                    <div class="stormSame_right flt">
+                        <div class="stormSameBox">
+                            <div class="stormSameBoxTxt">
+                                <p>Emilio Pucci</p>
+                                <p>铺砌</p>
+                                <p>￥7999</p>
+                            </div>
+                            <div class="stormSameBoxPic">
+                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="stormSameBox">
+                            <div class="stormSameBoxTxt">
+                                <p>Emilio Pucci</p>
+                                <p>铺砌</p>
+                                <p>￥7999</p>
+                            </div>
+                            <div class="stormSameBoxPic">
+                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="stormSameBox">
+                            <div class="stormSameBoxTxt">
+                                <p>Emilio Pucci</p>
+                                <p>铺砌</p>
+                                <p>￥7999</p>
+                            </div>
+                            <div class="stormSameBoxPic">
+                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="stormSameBox">
+                            <div class="stormSameBoxTxt">
+                                <p>Emilio Pucci</p>
+                                <p>铺砌</p>
+                                <p>￥7999</p>
+                            </div>
+                            <div class="stormSameBoxPic">
+                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="stormSameBox">
+                            <div class="stormSameBoxTxt">
+                                <p>Emilio Pucci</p>
+                                <p>铺砌</p>
+                                <p>￥7999</p>
+                            </div>
+                            <div class="stormSameBoxPic">
+                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="stormSameBox">
+                            <div class="stormSameBoxTxt">
+                                <p>Emilio Pucci</p>
+                                <p>铺砌</p>
+                                <p>￥7999</p>
+                            </div>
+                            <div class="stormSameBoxPic">
+                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="stormSame_left flt">
+                        <a href="#"><img src="rec/images/150329283294_366x515.jpg" alt=""></a>
+                    </div>
+                    <div class="stormSame_right flt">
+                        <div class="stormSameBox">
+                            <div class="stormSameBoxTxt">
+                                <p>Emilio Pucci</p>
+                                <p>铺砌</p>
+                                <p>￥7999</p>
+                            </div>
+                            <div class="stormSameBoxPic">
+                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="stormSameBox">
+                            <div class="stormSameBoxTxt">
+                                <p>Emilio Pucci</p>
+                                <p>铺砌</p>
+                                <p>￥7999</p>
+                            </div>
+                            <div class="stormSameBoxPic">
+                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="stormSameBox">
+                            <div class="stormSameBoxTxt">
+                                <p>Emilio Pucci</p>
+                                <p>铺砌</p>
+                                <p>￥7999</p>
+                            </div>
+                            <div class="stormSameBoxPic">
+                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="stormSameBox">
+                            <div class="stormSameBoxTxt">
+                                <p>Emilio Pucci</p>
+                                <p>铺砌</p>
+                                <p>￥7999</p>
+                            </div>
+                            <div class="stormSameBoxPic">
+                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="stormSameBox">
+                            <div class="stormSameBoxTxt">
+                                <p>Emilio Pucci</p>
+                                <p>铺砌</p>
+                                <p>￥7999</p>
+                            </div>
+                            <div class="stormSameBoxPic">
+                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="stormSameBox">
+                            <div class="stormSameBoxTxt">
+                                <p>Emilio Pucci</p>
+                                <p>铺砌</p>
+                                <p>￥7999</p>
+                            </div>
+                            <div class="stormSameBoxPic">
+                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="stormSame_left flt">
+                        <a href="#"><img src="rec/images/150329283294_366x515.jpg" alt=""></a>
+                    </div>
+                    <div class="stormSame_right flt">
+                        <div class="stormSameBox">
+                            <div class="stormSameBoxTxt">
+                                <p>Emilio Pucci</p>
+                                <p>铺砌</p>
+                                <p>￥7999</p>
+                            </div>
+                            <div class="stormSameBoxPic">
+                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="stormSameBox">
+                            <div class="stormSameBoxTxt">
+                                <p>Emilio Pucci</p>
+                                <p>铺砌</p>
+                                <p>￥7999</p>
+                            </div>
+                            <div class="stormSameBoxPic">
+                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="stormSameBox">
+                            <div class="stormSameBoxTxt">
+                                <p>Emilio Pucci</p>
+                                <p>铺砌</p>
+                                <p>￥7999</p>
+                            </div>
+                            <div class="stormSameBoxPic">
+                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="stormSameBox">
+                            <div class="stormSameBoxTxt">
+                                <p>Emilio Pucci</p>
+                                <p>铺砌</p>
+                                <p>￥7999</p>
+                            </div>
+                            <div class="stormSameBoxPic">
+                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="stormSameBox">
+                            <div class="stormSameBoxTxt">
+                                <p>Emilio Pucci</p>
+                                <p>铺砌</p>
+                                <p>￥7999</p>
+                            </div>
+                            <div class="stormSameBoxPic">
+                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="stormSameBox">
+                            <div class="stormSameBoxTxt">
+                                <p>Emilio Pucci</p>
+                                <p>铺砌</p>
+                                <p>￥7999</p>
+                            </div>
+                            <div class="stormSameBoxPic">
+                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>-->
+            </ul>
+			<div class="shopCenter">
+				<img src="rec/images/shopcenter.jpg" alt="">
+			</div>
+			<ul class="shopCenterNav">
+				<li>
+					<a href="#classBags_title">
+						经典箱包
+						<div class="shopCenterBox">
+							<div>classBags</div>
+						</div>
+					</a>
+
+				</li>
+				<li><a href="#classTime_title">典藏腕表
+					<div class="shopCenterBox">
+						<div>classBags</div>
+					</div>
+				</a></li>
+				<li><a href="#exquisite_title">精致配饰
+					<div class="shopCenterBox">
+						<div>classBags</div>
+					</div></a></li>
+				<li><a href="#cosmetics_title">个人洗护
+					<div class="shopCenterBox">
+						<div>classBags</div>
+					</div></a></li>
+				<li><a href="#shoesAndApp_title">时装鞋服
+					<div class="shopCenterBox">
+						<div>classBags</div>
+					</div></a></li>
+			</ul>
+			<div class="classBags_title" id="classBags_title">
+				<img src="rec/images/goodtitle1.jpg" alt="">
+			</div>
+			<ul class="classBags_list clearfix">
+				<li class="classBags_left flt">
+					<div class="classBagsLeftList">
+						<script id="classBagsLeftList" type="text/html">
+						{{each shopCenter1Nav as value}}
+						<a href="{{value.link}}">{{value.title}}</a>
+						{{/each}}
+
+						</script>
+
+					</div>
+					<div class="classBagsBanner">
+						<div class="smallBanner">
+							<ul class="slidImg">
+								<script id="slidImg1" type="text/html">
+									{{each shopCenter1Banner as value}}
+									<li>
+										{{each value as item}}
+										<a href="{{item.link}}">
+											<img src="{{item.src}}" alt="">
+										</a>
+										{{/each}}
+									</li>
+									{{/each}}
+								</script>
+								<!--<li>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+								</li>-->
+							</ul>
+							<ul class="slidNav clearfix">
+								<li style="background: #c8a985"></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="sliderBtn">
+								<span class="first">&lt;</span>
+								<span class="last">&gt;</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="classBags_right clearfix">
+					<div class="classBags_right_big">
+						<script id="shopCenter1ShowBig" type="text/html">
+							<a href="{{shopCenter1ShowBig.link}}">
+								<img src="{{shopCenter1ShowBig.src}}" alt="">
+							</a>
+							<div class="classBags_right_big_txt">
+								<p>{{shopCenter1ShowBig.p1}}</p>
+								<span></span>
+								<p>{{shopCenter1ShowBig.p2}}</p>
+								<p>{{shopCenter1ShowBig.p3}}</p>
+							</div>
+						</script>
+					</div>
+					<div class="classBags_right_smallContent flt">
+						<script id="classBags_right_smallContent" type="text/html">
+						{{each shopCenter1ShowSmall as value}}
+						<div class="classBags_right_small">
+							<a href="{{value.link}}">
+								<img  class="frt" src="{{value.src}}" alt="">
+							</a>
+						</div>
+						{{/each}}
+						</script>
+					</div>
+				</li>
+			</ul>
+			<div class="classTime_title" id="classTime_title">
+				<img src="rec/images/goodtitle2.jpg" alt="">
+			</div>
+			<ul class="classTime_list clearfix">
+				<li class="classBags_left flt">
+					<div class="classBagsLeftList">
+						<script id="classTimeLeftList" type="text/html">
+							{{each shopCenter1Nav as value}}
+							<a href="{{value.link}}">{{value.title}}</a>
+							{{/each}}
+
+						</script>
+
+					</div>
+					<div class="classBagsBanner">
+						<div class="smallBanner">
+							<ul class="slidImg">
+								<script id="slidImg2" type="text/html">
+									{{each shopCenter1Banner as value}}
+									<li>
+										{{each value as item}}
+										<a href="{{item.link}}">
+											<img src="{{item.src}}" alt="">
+										</a>
+										{{/each}}
+									</li>
+									{{/each}}
+								</script>
+								<!--<li>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+								</li>-->
+							</ul>
+							<ul class="slidNav clearfix">
+								<li style="background: #c8a985"></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="sliderBtn">
+								<span class="first">&lt;</span>
+								<span class="last">&gt;</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="classBags_right clearfix">
+					<div class="classBags_right_big">
+						<script id="shopCenter1classTime" type="text/html">
+							<a href="{{shopCenter1ShowBig.link}}">
+								<img src="{{shopCenter1ShowBig.src}}" alt="">
+							</a>
+							<div class="classBags_right_big_txt">
+								<p>{{shopCenter1ShowBig.p1}}</p>
+								<span></span>
+								<p>{{shopCenter1ShowBig.p2}}</p>
+								<p>{{shopCenter1ShowBig.p3}}</p>
+							</div>
+						</script>
+					</div>
+					<div class="classBags_right_smallContent flt">
+						<script id="classTime_right_smallContent" type="text/html">
+							{{each shopCenter1ShowSmall as value}}
+							<div class="classBags_right_small">
+								<a href="{{value.link}}">
+									<img  class="frt" src="{{value.src}}" alt="">
+								</a>
+							</div>
+							{{/each}}
+						</script>
+					</div>
+				</li>
+			</ul>
+			<div class="exquisite_title" id="exquisite_title">
+				<img src="rec/images/goodtitle6.jpg" alt="">
+			</div>
+			<ul class="exquisite_list clearfix">
+				<li class="classBags_left flt">
+					<div class="classBagsLeftList">
+						<script id="exquisiteLeftList" type="text/html">
+							{{each shopCenter1Nav as value}}
+							<a href="{{value.link}}">{{value.title}}</a>
+							{{/each}}
+
+						</script>
+
+					</div>
+					<div class="classBagsBanner">
+						<div class="smallBanner">
+							<ul class="slidImg">
+								<script id="slidImg3" type="text/html">
+									{{each shopCenter1Banner as value}}
+									<li>
+										{{each value as item}}
+										<a href="{{item.link}}">
+											<img src="{{item.src}}" alt="">
+										</a>
+										{{/each}}
+									</li>
+									{{/each}}
+								</script>
+								<!--<li>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+								</li>-->
+							</ul>
+							<ul class="slidNav clearfix">
+								<li style="background: #c8a985"></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="sliderBtn">
+								<span class="first">&lt;</span>
+								<span class="last">&gt;</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="classBags_right clearfix">
+					<div class="classBags_right_big">
+						<script id="shopCenter1exquisite" type="text/html">
+							<a href="{{shopCenter1ShowBig.link}}">
+								<img src="{{shopCenter1ShowBig.src}}" alt="">
+							</a>
+							<div class="classBags_right_big_txt">
+								<p>{{shopCenter1ShowBig.p1}}</p>
+								<span></span>
+								<p>{{shopCenter1ShowBig.p2}}</p>
+								<p>{{shopCenter1ShowBig.p3}}</p>
+							</div>
+						</script>
+					</div>
+					<div class="classBags_right_smallContent flt">
+						<script id="exquisite_right_smallContent" type="text/html">
+							{{each shopCenter1ShowSmall as value}}
+							<div class="classBags_right_small">
+								<a href="{{value.link}}">
+									<img  class="frt" src="{{value.src}}" alt="">
+								</a>
+							</div>
+							{{/each}}
+						</script>
+					</div>
+				</li>
+			</ul>
+			<div class="cosmetics_title" id="cosmetics_title">
+				<img src="rec/images/goodtitle4.jpg" alt="">
+			</div>
+			<ul class="cosmetics_list clearfix">
+				<li class="classBags_left flt">
+					<div class="classBagsLeftList">
+						<script id="cosmeticsLeftList" type="text/html">
+							{{each shopCenter1Nav as value}}
+							<a href="{{value.link}}">{{value.title}}</a>
+							{{/each}}
+
+						</script>
+
+					</div>
+					<div class="classBagsBanner">
+						<div class="smallBanner">
+							<ul class="slidImg">
+								<script id="slidImg4" type="text/html">
+									{{each shopCenter1Banner as value}}
+									<li>
+										{{each value as item}}
+										<a href="{{item.link}}">
+											<img src="{{item.src}}" alt="">
+										</a>
+										{{/each}}
+									</li>
+									{{/each}}
+								</script>
+								<!--<li>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+								</li>-->
+							</ul>
+							<ul class="slidNav clearfix">
+								<li style="background: #c8a985"></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="sliderBtn">
+								<span class="first">&lt;</span>
+								<span class="last">&gt;</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="classBags_right clearfix">
+					<div class="classBags_right_big">
+						<script id="shopCenter1cosmetics" type="text/html">
+							<a href="{{shopCenter1ShowBig.link}}">
+								<img src="{{shopCenter1ShowBig.src}}" alt="">
+							</a>
+							<div class="classBags_right_big_txt">
+								<p>{{shopCenter1ShowBig.p1}}</p>
+								<span></span>
+								<p>{{shopCenter1ShowBig.p2}}</p>
+								<p>{{shopCenter1ShowBig.p3}}</p>
+							</div>
+						</script>
+					</div>
+					<div class="classBags_right_smallContent flt">
+						<script id="cosmetics_right_smallContent" type="text/html">
+							{{each shopCenter1ShowSmall as value}}
+							<div class="classBags_right_small">
+								<a href="{{value.link}}">
+									<img  class="frt" src="{{value.src}}" alt="">
+								</a>
+							</div>
+							{{/each}}
+						</script>
+					</div>
+				</li>
+			</ul>
+			<div class="shoesAndApp_title" id="shoesAndApp_title">
+				<img src="rec/images/goodtitle3.jpg" alt="">
+			</div>
+			<ul class="shoesAndApp_list clearfix">
+				<li class="classBags_left flt">
+					<div class="classBagsLeftList">
+						<script id="shoesAndAppLeftList" type="text/html">
+							{{each shopCenter1Nav as value}}
+							<a href="{{value.link}}">{{value.title}}</a>
+							{{/each}}
+
+						</script>
+
+					</div>
+					<div class="classBagsBanner">
+						<div class="smallBanner">
+							<ul class="slidImg">
+								<script id="slidImg5" type="text/html">
+									{{each shopCenter1Banner as value}}
+									<li>
+										{{each value as item}}
+										<a href="{{item.link}}">
+											<img src="{{item.src}}" alt="">
+										</a>
+										{{/each}}
+									</li>
+									{{/each}}
+								</script>
+								<!--<li>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+									<a href="#"><img src="rec/images/indexlog-1.png" alt=""></a>
+								</li>-->
+							</ul>
+							<ul class="slidNav clearfix">
+								<li style="background: #c8a985"></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="sliderBtn">
+								<span class="first">&lt;</span>
+								<span class="last">&gt;</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="classBags_right clearfix">
+					<div class="classBags_right_big">
+						<script id="shopCenter1shoesAndApp" type="text/html">
+							<a href="{{shopCenter1ShowBig.link}}">
+								<img src="{{shopCenter1ShowBig.src}}" alt="">
+							</a>
+							<div class="classBags_right_big_txt">
+								<p>{{shopCenter1ShowBig.p1}}</p>
+								<span></span>
+								<p>{{shopCenter1ShowBig.p2}}</p>
+								<p>{{shopCenter1ShowBig.p3}}</p>
+							</div>
+						</script>
+					</div>
+					<div class="classBags_right_smallContent flt">
+						<script id="shoesAndApp_right_smallContent" type="text/html">
+							{{each shopCenter1ShowSmall as value}}
+							<div class="classBags_right_small">
+								<a href="{{value.link}}">
+									<img  class="frt" src="{{value.src}}" alt="">
+								</a>
+							</div>
+							{{/each}}
+						</script>
+					</div>
+				</li>
+			</ul>
+			<div class="promotion_title">
+				<img src="rec/images/promotiontitle.jpg" alt="">
+			</div>
+			<ul class="promotion_list">
+				<script id="promotion" type="text/html">
+					{{each pro_m as value}}
+						<li>
+							<img src="{{value.src}}" alt="">
+						</li>
+					{{/each}}
+					<ul class="pro_sBox clearfix flt">
+						{{each pro_s as value}}
+						<li class="pro_s">
+							<img src="{{value.src}}" alt="">
+							<span class="topLine"></span>
+							<span class="leftLine"></span>
+							<span class="bottomLine"></span>
+							<span class="rightLine"></span>
+						</li>
+						{{/each}}
+					</ul>
+					<ul class="pro_show flt">
+						<li >
+							<img src="{{pro_show.src}}" alt="">
+						</li>
+					</ul>
+
+				</script>
+				<li class="pro_m">
+					<img src="rec/images/150338573870_293x293.jpg" alt="">
+				</li>
+				<li class="pro_m">
+					<img src="rec/images/150338573870_293x293.jpg" alt="">
+				</li>
+				<li class="pro_b">
+					<img src="rec/images/150338138965_598x293.jpg" alt="">
+				</li>
+				<li class="pro_b">
+					<img src="rec/images/150338138965_598x293.jpg" alt="">
+				</li>
+				<li class="pro_m">
+					<img src="rec/images/150338573870_293x293.jpg" alt="">
+				</li>
+				<li class="pro_m">
+					<img src="rec/images/150338573870_293x293.jpg" alt="">
+				</li>
+				<ul class="pro_sBox clearfix flt" >
+					<li class="pro_s">
+						<img src="rec/images/1promotionpic.jpg" alt="">
+						<span class="topLine"></span>
+						<span class="leftLine"></span>
+						<span class="bottomLine"></span>
+						<span class="rightLine"></span>
+					</li>
+					<li class="pro_s">
+						<img src="rec/images/1promotionpic.jpg" alt="">
+						<span class="topLine"></span>
+						<span class="leftLine"></span>
+						<span class="bottomLine"></span>
+						<span class="rightLine"></span>
+					</li>
+					<li class="pro_s">
+						<img src="rec/images/1promotionpic.jpg" alt="">
+					</li>
+					<li class="pro_s">
+						<img src="rec/images/1promotionpic.jpg" alt="">
+					</li>
+					<li class="pro_s">
+						<img src="rec/images/1promotionpic.jpg" alt="">
+					</li>
+					<li class="pro_s">
+						<img src="rec/images/1promotionpic.jpg" alt="">
+					</li>
+				</ul>
+				<ul class="pro_show flt">
+					<li >
+						<img src="rec/images/1bank.jpg" alt="">
+					</li>
+				</ul>
+
+			</ul>
+		</div>
+	</div>
+	<hr>
+	<div class="link">
+		<!--<div class="setting clearfix">
+			<ul class="clearfix">
+				<li>
+					<a href="#"><img src="rec/images/footer_message01.jpg" alt=""></a>
+					<h4>正品保证</h4>
+					<a href="#"><p>品牌授权，官方认证</p></a>
+				</li>
+				<li>
+					<a href="#"><img src="rec/images/footer_message01.jpg" alt=""></a>
+					<h4>正品保证</h4>
+					<a href="#"><p>品牌授权，官方认证</p></a>
+				</li>
+				<li>
+					<a href="#"><img src="rec/images/footer_message01.jpg" alt=""></a>
+					<h4>正品保证</h4>
+					<a href="#"><p>品牌授权，官方认证</p></a>
+				</li>
+				<li>
+					<a href="#"><img src="rec/images/footer_message01.jpg" alt=""></a>
+					<h4>正品保证</h4>
+					<a href="#"><p>品牌授权，官方认证</p></a>
+				</li>
+				<li>
+					<a href="#"><img src="rec/images/footer_message01.jpg" alt=""></a>
+					<h4>正品保证</h4>
+					<a href="#"><p>品牌授权，官方认证</p></a>
+				</li>
+			</ul>
+			<dl>
+				<dt>服务保障</dt>
+				<dd><a href="#">品牌授权正品</a></dd>
+				<dd><a href="#">品牌客服</a></dd>
+				<dd><a href="#">预约到店体验</a></dd>
+				<dd><a href="#">7天无理由退货</a></dd>
+			</dl>
+			<dl>
+				<dt>服务保障</dt>
+				<dd><a href="#">品牌授权正品</a></dd>
+				<dd><a href="#">品牌客服</a></dd>
+				<dd><a href="#">预约到店体验</a></dd>
+				<dd><a href="#">7天无理由退货</a></dd>
+			</dl>
+			<dl>
+				<dt>服务保障</dt>
+				<dd><a href="#">品牌授权正品</a></dd>
+				<dd><a href="#">品牌客服</a></dd>
+				<dd><a href="#">预约到店体验</a></dd>
+				<dd><a href="#">7天无理由退货</a></dd>
+			</dl>
+			<dl>
+				<dt>服务保障</dt>
+				<dd><a href="#">品牌授权正品</a></dd>
+				<dd><a href="#">品牌客服</a></dd>
+				<dd><a href="#">预约到店体验</a></dd>
+				<dd><a href="#">预约到店体验</a></dd>
+				<dd><a href="#">预约到店体验</a></dd>
+				<dd><a href="#">预约到店体验</a></dd>
+				<dd><a href="#">7天无理由退货</a></dd>
+			</dl>
+			<dl>
+				<dt>服务保障</dt>
+				<dd><a href="#">品牌授权正品</a></dd>
+				<dd><a href="#">品牌客服</a></dd>
+				<dd><a href="#">预约到店体验</a></dd>
+				<dd><a href="#">7天无理由退货</a></dd>
+			</dl>
+			<dl>
+				<dt>第五大道APP</dt>
+				<dd><img src="rec/images/footer_message06.jpg" alt=""></dd>
+			</dl>
+			<dl>
+				<dt>第五大道微博</dt>
+				<dd><img src="rec/images/footer_message07.jpg" alt=""></dd>
+			</dl>
+		</div>
+		<div class="footer">
+			<p>
+				<a href="#">箱包</a> |
+				<a href="#">箱包</a> |
+				<a href="#">箱包</a> |
+				<a href="#">箱包</a> |
+				<a href="#">箱包</a> |
+				<a href="#">箱包</a> |
+				<a href="#">箱包</a> |
+				<a href="#">箱包</a> |
+				<a href="#">箱包</a>
+			</p>
+			<p>
+				<a href="#">关于第五大道</a> |
+				<a href="#">关于第五大道</a> |
+				<a href="#">合作好友</a> |
+				<a href="#">关于第五大道</a> |
+				<a href="#">关第五大道</a> |
+				<a href="#">关第五大道</a> |
+				<a href="#">五大道</a> |
+				<a href="#">五大道</a> |
+				<a href="#">五大道</a> |
+				<a href="#">大道</a> |
+			</p>
+			<p>Copyright © 2008-2016 瑞美嘉信国际信息技术（北京）有限公司  版权所有京ICP备09012701号-1 京公网安备110105007400号 食品经营许可证号：</p>
+			<p class="footerPic">
+				<a href="#">
+					<img src="rec/images/14567178388519.jpg" alt="">
+				</a>
+				<a href="#">
+					<img src="rec/images/14567178388519.jpg" alt="">
+				</a>
+				<a href="#">
+					<img src="rec/images/14567178388519.jpg" alt="">
+				</a>
+			</p>
+		</div>-->
+
+
+	</div>
+	<!--遮罩层-->
+	<div class="cover">
+	</div>
+    <script src="rec/js/index.js"></script>
+</body>
+</html>
