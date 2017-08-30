@@ -191,6 +191,7 @@ header .setting{
   }
 }
 nav{
+  z-index: 3;
   width: 100%;
   min-width:1210px;
   background: linear-gradient(#333333, #050404);
@@ -420,10 +421,10 @@ nav{
       background: url(../images/149247926655_1440x520.jpg) top center no-repeat;
     }
     a{
-      /*width: 100%;
+      width: 100%;
       height: 100%;
       display: block;
-      opacity: 0;*/
+      opacity: 0;
     }
   }
   .slidNav{
@@ -873,6 +874,10 @@ nav{
       width: 960px;
       float: left;
       .classBags_right_big{
+        img{
+          width: 390px;
+          height: 370px;
+        }
         float: left;
         position: relative;
         border: 1px solid #ccc;

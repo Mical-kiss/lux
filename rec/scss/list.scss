@@ -1,0 +1,156 @@
+@mixin active{
+  color:#fff;
+  background:#c69c6d;
+}
+
+.listNav{
+  line-height: 42px;
+  color:#c69c6d;
+  p{
+    text-indent:30px;
+  }
+  .listNavBox{
+    border: 1px solid #ccc;
+
+    dl{
+      &:first-child{
+        border-bottom: 1px solid #ebebeb;
+      }
+      &:first-child{
+        dd:last-child{
+          span{
+            display: inline-block;
+            width: 130px;
+            background-color: #ebebeb;
+            padding: 0;
+            margin: 0;
+            height: 42px;
+            float: left;
+          }
+          clear: left;
+        }
+      }
+      dt{
+        float: left;
+        font-weight:bold;
+        background-color: #ebebeb;
+        width: 110px;
+        padding-left:20px;
+        a{
+          color:#c69c6d;
+        }
+      }
+      dd{
+        &:nth-of-type(1){
+          padding:0 0 0 10px;
+        }
+
+        float: left;
+        .more{
+          color:#666;
+          background:#ccc;
+        }
+        span{
+          color:#000;
+        }
+        a{
+          color:#c69c6d;
+        }
+        span,a{
+          padding:5px 10px;
+          margin-right: 2px;
+          &:hover{
+            @include active;
+          }
+          &.active{
+            @include active;
+          }
+        }
+      }
+
+    }
+  }
+}
+.listFilter{
+  .setting{
+    margin:10px auto;
+    width: 1200px;
+    padding: 5px;
+    background-color: #ebebeb;
+  }
+
+    li{
+      float: left;
+      width: 60px;
+      line-height: 31px;
+      text-align: center;
+      border: 1px solid #CCC;
+      border-right:0;
+      &:last-child{
+        border-right:1px solid #ccc;
+      }
+      i.iconfont{
+        font-size: 10px;
+      }
+      a{
+        color:#666;
+        &:hover{
+          color:#c69c6d;
+        }
+      }
+      &.active{
+        @include active;
+      }
+    }
+}
+.goodsList{
+  li{
+    color:#000;
+    line-height: 24px;
+    text-align: center;
+    width: 280px;
+    height: 470px;
+    margin:0 1px;
+    padding:10px;
+    float: left;
+    &:hover{
+      background-color: #ebebeb;
+    }
+    dl{
+
+      height: 470px;
+      dt{
+        img{
+          width: 275px;
+          height: 350px;
+        }
+      }
+      dd:nth-of-type(1){
+        color:#666;
+      }
+      dd:last-child{
+        color:#c69c6d;
+      }
+      background: #fff;
+    }
+
+  }
+  p{
+    text-align: center;
+    a{
+      &.active{
+        background-color: #c69c6d;
+        color:#fff;
+      }
+      &:hover{
+        background-color: #c69c6d;
+        color:#fff;
+      }
+      display: inline-block;
+      padding:5px 10px;
+      border: 1px solid #c69c6d;
+      color:#666;
+
+    }
+  }
+}

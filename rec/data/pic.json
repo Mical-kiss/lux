@@ -5,93 +5,112 @@
       "alt":"抱歉未能加载",
       "smallSrc":"rec/images/149482910148_214x108.jpg",
       "cName":"香奈儿",
-      "eName":"Chanel"
+      "eName":"Chanel",
+      "link":"list.html"
     },
     {
       "src":"rec/images/150209001064_236x329.jpg",
       "alt":"抱歉未能加载",
       "smallSrc":"rec/images/149482910148_214x108.jpg",
       "cName":"香奈儿",
-      "eName":"Chanel"
+      "eName":"Chanel",
+      "link":"list.html"
     },
     {
       "src":"rec/images/14640567461996.jpg",
       "alt":"抱歉未能加载",
       "smallSrc":"rec/images/149482910148_214x108.jpg",
       "cName":"香奈儿",
-      "eName":"Chanel"
+      "eName":"Chanel",
+      "link":"list.html"
     },
     {
       "src":"rec/images/150209001064_236x329.jpg",
       "alt":"抱歉未能加载",
       "smallSrc":"rec/images/149482910148_214x108.jpg",
       "cName":"香奈儿",
-      "eName":"Chanel"
+      "eName":"Chanel",
+      "link":"list.html"
     },
     {
       "src":"rec/images/147806365118_234x329.jpg",
       "alt":"抱歉未能加载",
       "smallSrc":"rec/images/149482910148_214x108.jpg",
       "cName":"香奈儿",
-      "eName":"Chanel"
+      "eName":"Chanel",
+      "link":"list.html"
     }
   ],
   "hotStore":[
     {
       "src":"rec/images/indexlog-1.png",
-      "title":"古驰"
+      "title":"古驰",
+      "link":"list.html"
     },
     {
       "src":"rec/images/149482910148_214x108.jpg",
-      "title":"古驰"
+      "title":"古驰",
+      "link":"list.html"
     },
     {
       "src":"rec/images/149482910148_214x108.jpg",
-      "title":"香奈儿"
+      "title":"香奈儿",
+      "link":"list.html"
     },
     {
       "src":"rec/images/149482910148_214x108.jpg",
-      "title":"爱马仕"
+      "title":"爱马仕",
+      "link":"list.html"
     },
     {
       "src":"rec/images/149482910148_214x108.jpg",
-      "title":"芬迪"
+      "title":"芬迪",
+      "link":"list.html"
     },
     {
       "src":"rec/images/149482910148_214x108.jpg",
-      "title":"浪琴"
+      "title":"浪琴",
+      "link":"list.html"
     },
     {
       "src":"rec/images/149482910148_214x108.jpg",
-      "title":"菲拉格慕"
+      "title":"菲拉格慕",
+      "link":"list.html"
     },
     {
       "src":"rec/images/149482910148_214x108.jpg",
-      "title":"古驰"
+      "title":"古驰",
+      "link":"list.html"
     },
     {
       "src":"rec/images/149482910148_214x108.jpg",
-      "title":"古驰"
+      "title":"古驰",
+      "link":"list.html"
     },
     {
       "src":"rec/images/149482910148_214x108.jpg",
-      "title":"香奈儿"
+      "title":"香奈儿",
+      "link":"list.html"
     },
     {
       "src":"rec/images/149482910148_214x108.jpg",
-      "title":"爱马仕"
+      "title":"爱马仕",
+      "link":"list.html"
     },
     {
       "src":"rec/images/149482910148_214x108.jpg",
-      "title":"芬迪"
+      "title":"芬迪",
+      "link":"list.html"
     },
     {
       "src":"rec/images/149482910148_214x108.jpg",
-      "title":"浪琴"
+      "title":"浪琴",
+      "link":"list.html"
     },
     {
       "src":"rec/images/149482910148_214x108.jpg",
-      "title":"菲拉格慕"
+      "title":"菲拉格慕",
+      "link":"list.html"
     }
   ],
   "stormSame":[
@@ -100,44 +119,51 @@
         "src":"rec/images/150329283294_366x515.jpg",
         "titleC":"",
         "titleA":"",
-        "price":""
+        "price":"",
+        "link":"list.html"
       },
       [
         {
           "src":"rec/images/150332360024_505x864_800x800.jpg",
           "titleC":"铺砌",
           "titleA":"Emilio Pucci",
-          "price":"7999"
+          "price":"7999",
+          "link":"list.html"
         },
         {
           "src":"rec/images/150332360024_505x864_800x800.jpg",
           "titleC":"铺砌",
           "titleA":"Emilio Pucci",
-          "price":"7999"
+          "price":"7999",
+          "link":"list.html"
         },
         {
           "src":"rec/images/150332360024_505x864_800x800.jpg",
           "titleC":"铺砌",
           "titleA":"Emilio Pucci",
-          "price":"7999"
+          "price":"7999",
+          "link":"list.html"
         },
         {
           "src":"rec/images/150332360024_505x864_800x800.jpg",
           "titleC":"铺砌",
           "titleA":"Emilio Pucci",
-          "price":"7999"
+          "price":"7999",
+          "link":"list.html"
         },
         {
           "src":"rec/images/150332360024_505x864_800x800.jpg",
           "titleC":"铺砌",
           "titleA":"Emilio Pucci",
-          "price":"7999"
+          "price":"7999",
+          "link":"list.html"
         },
         {
           "src":"rec/images/150332360024_505x864_800x800.jpg",
           "titleC":"铺砌",
           "titleA":"Emilio Pucci",
-          "price":"7999"
+          "price":"7999",
+          "link":"list.html"
         }
       ]
 
@@ -147,44 +173,51 @@
         "src":"rec/images/150329283294_366x515.jpg",
         "titleC":"",
         "titleA":"",
-        "price":""
+        "price":"",
+        "link":"list.html"
       },
       [
         {
           "src":"rec/images/150332360024_505x864_800x800.jpg",
           "titleC":"铺砌",
           "titleA":"Emilio Pucci",
-          "price":"7999"
+          "price":"7999",
+          "link":"list.html"
         },
         {
           "src":"rec/images/150332360024_505x864_800x800.jpg",
           "titleC":"铺砌",
           "titleA":"Emilio Pucci",
-          "price":"7999"
+          "price":"7999",
+          "link":"list.html"
         },
         {
           "src":"rec/images/150332360024_505x864_800x800.jpg",
           "titleC":"铺砌",
           "titleA":"Emilio Pucci",
-          "price":"7999"
+          "price":"7999",
+          "link":"list.html"
         },
         {
           "src":"rec/images/150332360024_505x864_800x800.jpg",
           "titleC":"铺砌",
           "titleA":"Emilio Pucci",
-          "price":"7999"
+          "price":"7999",
+          "link":"list.html"
         },
         {
           "src":"rec/images/150332360024_505x864_800x800.jpg",
           "titleC":"铺砌",
           "titleA":"Emilio Pucci",
-          "price":"7999"
+          "price":"7999",
+          "link":"list.html"
         },
         {
           "src":"rec/images/150332360024_505x864_800x800.jpg",
           "titleC":"铺砌",
           "titleA":"Emilio Pucci",
-          "price":"7999"
+          "price":"7999",
+          "link":"list.html"
         }
       ]
 
@@ -194,44 +227,51 @@
         "src":"rec/images/150329283294_366x515.jpg",
         "titleC":"",
         "titleA":"",
-        "price":""
+        "price":"",
+        "link":"list.html"
       },
       [
         {
           "src":"rec/images/150332360024_505x864_800x800.jpg",
           "titleC":"铺砌",
           "titleA":"Emilio Pucci",
-          "price":"7999"
+          "price":"7999",
+          "link":"list.html"
         },
         {
           "src":"rec/images/150332360024_505x864_800x800.jpg",
           "titleC":"铺砌",
           "titleA":"Emilio Pucci",
-          "price":"7999"
+          "price":"7999",
+          "link":"list.html"
         },
         {
           "src":"rec/images/150332360024_505x864_800x800.jpg",
           "titleC":"铺砌",
           "titleA":"Emilio Pucci",
-          "price":"7999"
+          "price":"7999",
+          "link":"list.html"
         },
         {
           "src":"rec/images/150332360024_505x864_800x800.jpg",
           "titleC":"铺砌",
           "titleA":"Emilio Pucci",
-          "price":"7999"
+          "price":"7999",
+          "link":"list.html"
         },
         {
           "src":"rec/images/150332360024_505x864_800x800.jpg",
           "titleC":"铺砌",
           "titleA":"Emilio Pucci",
-          "price":"7999"
+          "price":"7999",
+          "link":"list.html"
         },
         {
           "src":"rec/images/150332360024_505x864_800x800.jpg",
           "titleC":"铺砌",
           "titleA":"Emilio Pucci",
-          "price":"7999"
+          "price":"7999",
+          "link":"list.html"
         }
       ]
 
@@ -241,98 +281,233 @@
     "shopCenter1Nav":[
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
+      },
+      {
+        "title":"手提包",
+        "link":"list.html"
+      },
+      {
+        "title":"手提斜挎包",
+        "link":"list.html"
+      },
+      {
+        "title":"双肩包",
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
-      },
-      {
-        "title":"单肩包",
-        "link":"www.baidu.com"
-      },
-      {
-        "title":"单包",
-        "link":"www.baidu.com"
-      },
-      {
-        "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
+      }
+    ],
+    "shopCenter1Banner":[
+      [
+        {
+          "src":"rec/images/14477318724845.png",
+          "link":"goods.html?0001",
+          "id":"0001"
+        },
+        {
+          "src":"rec/images/indexlog-1.png",
+          "link":"goods.html?0001",
+          "id":"0001"
+        },
+        {
+          "src":"rec/images/14477378665957.png",
+          "link":"goods.html?0001",
+          "id":"0001"
+        },
+        {
+          "src":"rec/images/indexlog-1.png",
+          "link":"goods.html?0001",
+          "id":"0001"
+        }
+      ],
+      [
+        {
+          "src":"rec/images/indexlog-1.png",
+          "link":"list.html"
+        },
+        {
+          "src":"rec/images/indexlog-1.png",
+          "link":"list.html"
+        },
+        {
+          "src":"rec/images/indexlog-1.png",
+          "link":"list.html"
+        },
+        {
+          "src":"rec/images/indexlog-1.png",
+          "link":"list.html"
+        }
+      ],
+      [
+        {
+          "src":"rec/images/indexlog-1.png",
+          "link":"list.html"
+        },
+        {
+          "src":"rec/images/indexlog-1.png",
+          "link":"list.html"
+        },
+        {
+          "src":"rec/images/indexlog-1.png",
+          "link":"list.html"
+        },
+        {
+          "src":"rec/images/indexlog-1.png",
+          "link":"list.html"
+        }
+      ]
+    ],
+    "shopCenter1ShowBig":{
+      "src":"rec/images/150388985826_391x372.jpg",
+      "p1":"miumiu",
+      "p2":"低调奢华",
+      "p3":"与Prada一样成功的品牌",
+      "link":"goods.html?0001",
+      "id":"0001"
+    },
+    "shopCenter1ShowSmall":[
+      {
+        "src":"rec/images/150399150722_275x180.jpg",
+        "link":"goods.html?0001",
+        "id":"0001"
+      },
+      {
+        "src":"rec/images/150399150729_275x180.jpg",
+        "link":"goods.html?0001",
+        "id":"0001"
+      },
+      {
+        "src":"rec/images/150399150719_275x180.jpg",
+        "link":"goods.html?0001",
+        "id":"0001"
+      },
+      {
+        "src":"rec/images/150399150730_275x180.jpg",
+        "link":"goods.html?0001",
+        "id":"0001"
+      }
+    ]
+  },
+
+  "shopCenter2":{
+    "shopCenter1Nav":[
+      {
+        "title":"胡一菲",
+        "link":"list.html"
+      },
+      {
+        "title":"曾小贤",
+        "link":"list.html"
+      },
+      {
+        "title":"单肩包",
+        "link":"list.html"
+      },
+      {
+        "title":"单包",
+        "link":"list.html"
+      },
+      {
+        "title":"单肩包",
+        "link":"list.html"
+      },
+      {
+        "title":"肩包",
+        "link":"list.html"
+      },
+      {
+        "title":"单肩",
+        "link":"list.html"
+      },
+      {
+        "title":"单肩包",
+        "link":"list.html"
+      },
+      {
+        "title":"单肩包",
+        "link":"list.html"
+      },
+      {
+        "title":"单肩包",
+        "link":"list.html"
       }
     ],
     "shopCenter1Banner":[
       [
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"goods.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.jd.com"
+          "link":"goods.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"goods.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"goods.html"
         }
       ],
       [
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.jd.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         }
       ],
       [
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.jd.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         }
       ]
     ],
@@ -341,149 +516,30 @@
       "link":"aaa",
       "p1":"Delvaux",
       "p2":"低调奢华",
-      "p3":"比例是的法拉利"
+      "p3":"比例是的法拉利",
+      "link":"goods.html?0002",
+      "id":"0002"
     },
     "shopCenter1ShowSmall":[
       {
         "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
+        "link":"goods.html?0002",
+        "id":"0002"
       },
       {
         "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
+        "link":"goods.html?0002",
+        "id":"0002"
       },
       {
         "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
+        "link":"goods.html?0002",
+        "id":"0002"
       },
       {
         "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
-      }
-    ]
-  },
-  "shopCenter2":{
-    "shopCenter1Nav":[
-      {
-        "title":"渐渐宝",
-        "link":"www.baidu.com"
-      },
-      {
-        "title":"囧囧侠",
-        "link":"www.baidu.com"
-      },
-      {
-        "title":"哎哎图",
-        "link":"www.baidu.com"
-      },
-      {
-        "title":"单包",
-        "link":"www.baidu.com"
-      },
-      {
-        "title":"单肩包",
-        "link":"www.baidu.com"
-      },
-      {
-        "title":"肩包",
-        "link":"www.baidu.com"
-      },
-      {
-        "title":"单肩",
-        "link":"www.baidu.com"
-      },
-      {
-        "title":"单肩包",
-        "link":"www.baidu.com"
-      },
-      {
-        "title":"单肩包",
-        "link":"www.baidu.com"
-      },
-      {
-        "title":"单肩包",
-        "link":"www.baidu.com"
-      }
-    ],
-    "shopCenter1Banner":[
-      [
-        {
-          "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
-        },
-        {
-          "src":"rec/images/indexlog-1.png",
-          "link":"www.jd.com"
-        },
-        {
-          "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
-        },
-        {
-          "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
-        }
-      ],
-      [
-        {
-          "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
-        },
-        {
-          "src":"rec/images/indexlog-1.png",
-          "link":"www.jd.com"
-        },
-        {
-          "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
-        },
-        {
-          "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
-        }
-      ],
-      [
-        {
-          "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
-        },
-        {
-          "src":"rec/images/indexlog-1.png",
-          "link":"www.jd.com"
-        },
-        {
-          "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
-        },
-        {
-          "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
-        }
-      ]
-    ],
-    "shopCenter1ShowBig":{
-      "src":"rec/images/150329308648_390x370.png",
-      "link":"aaa",
-      "p1":"Delvaux",
-      "p2":"低调奢华",
-      "p3":"比例是的法拉利"
-    },
-    "shopCenter1ShowSmall":[
-      {
-        "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
-      },
-      {
-        "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
-      },
-      {
-        "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
-      },
-      {
-        "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
+        "link":"goods.html?0002",
+        "id":"0002"
       }
     ]
   },
@@ -491,98 +547,98 @@
     "shopCenter1Nav":[
       {
         "title":"胡一菲",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"曾小贤",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       }
     ],
     "shopCenter1Banner":[
       [
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"goods.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.jd.com"
+          "link":"goods.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"goods.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"goods.html"
         }
       ],
       [
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.jd.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         }
       ],
       [
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.jd.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         }
       ]
     ],
@@ -591,123 +647,124 @@
       "link":"aaa",
       "p1":"Delvaux",
       "p2":"低调奢华",
-      "p3":"比例是的法拉利"
+      "p3":"比例是的法拉利",
+      "link":"goods.html"
     },
     "shopCenter1ShowSmall":[
       {
         "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
+        "link":"goods.html"
       },
       {
         "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
+        "link":"goods.html"
       },
       {
         "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
+        "link":"goods.html"
       },
       {
         "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
+        "link":"goods.html"
       }
     ]
   },
   "shopCenter4":{
     "shopCenter1Nav":[
       {
-        "title":"四儿啊",
-        "link":"www.baidu.com"
+        "title":"胡一菲",
+        "link":"list.html"
+      },
+      {
+        "title":"曾小贤",
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
-      },
-      {
-        "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       }
     ],
     "shopCenter1Banner":[
       [
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"goods.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.jd.com"
+          "link":"goods.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"goods.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"goods.html"
         }
       ],
       [
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.jd.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         }
       ],
       [
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.jd.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         }
       ]
     ],
@@ -716,123 +773,124 @@
       "link":"aaa",
       "p1":"Delvaux",
       "p2":"低调奢华",
-      "p3":"比例是的法拉利"
+      "p3":"比例是的法拉利",
+      "link":"goods.html"
     },
     "shopCenter1ShowSmall":[
       {
         "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
+        "link":"goods.html"
       },
       {
         "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
+        "link":"goods.html"
       },
       {
         "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
+        "link":"goods.html"
       },
       {
         "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
+        "link":"goods.html"
       }
     ]
   },
   "shopCenter5":{
     "shopCenter1Nav":[
       {
-        "title":"五儿啊",
-        "link":"www.baidu.com"
+        "title":"胡一菲",
+        "link":"list.html"
+      },
+      {
+        "title":"曾小贤",
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
-      },
-      {
-        "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       },
       {
         "title":"单肩包",
-        "link":"www.baidu.com"
+        "link":"list.html"
       }
     ],
     "shopCenter1Banner":[
       [
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"goods.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.jd.com"
+          "link":"goods.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"goods.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"goods.html"
         }
       ],
       [
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.jd.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         }
       ],
       [
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.jd.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         },
         {
           "src":"rec/images/indexlog-1.png",
-          "link":"www.baidu.com"
+          "link":"list.html"
         }
       ]
     ],
@@ -841,24 +899,25 @@
       "link":"aaa",
       "p1":"Delvaux",
       "p2":"低调奢华",
-      "p3":"比例是的法拉利"
+      "p3":"比例是的法拉利",
+      "link":"goods.html"
     },
     "shopCenter1ShowSmall":[
       {
         "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
+        "link":"goods.html"
       },
       {
         "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
+        "link":"goods.html"
       },
       {
         "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
+        "link":"goods.html"
       },
       {
         "src":"rec/images/150364461755_275x180.jpg",
-        "link":"index.html"
+        "link":"goods.html"
       }
     ]
   },

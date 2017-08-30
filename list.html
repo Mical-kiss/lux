@@ -6,13 +6,103 @@
     <link rel="stylesheet" type="text/css" href="rec/fonts/iconfont.css">
     <link rel="stylesheet" href="rec/css/ba.css">
     <link rel="stylesheet" href="rec/scss/common.css">
+    <link rel="stylesheet" href="rec/scss/list.css">
     <script src="rec/js/jquery-1.11.0.js"></script>
     <script src="rec/js/template.js"></script>
+    <script src="rec/js/cookie.js"></script>
 </head>
 <body>
 <div class="topContent"></div>
+<div class="listNav">
+    <div class="setting clearfix">
+        <script id="listNav" type="text/html">
+            <p>{{nav.title}}</p>
+            <div class="listNavBox clearfix">
+                {{each nav.navList as value i}}
+                <dl class="clearfix">
 
+                    {{if i==0}}
+                        <dt><span>{{value.dt}}</span></dt>
+                        {{each value.dd as value1 j}}
+                            {{if j==0  }}
+                            <dd><span class="active" href="{{j}}">{{value1.txt}}</span></dd>
+                            {{else if j>0 && j< value.dd.length-2 }}
+                            <dd><span href="#">{{value1.txt}}</span></dd>
+                            {{else if j==value.dd.length-2 }}
+                            <dd><span class="more" href="#">{{value1.txt}}</span></dd>
+                            {{else if j==value.dd.length-1}}
+                            <dd class="brandContent">
+                                <span></span>
+                                {{each value1.brand as value2}}
+                                <a href="#">{{value2.txt}}</a>
+                                {{/each}}
+                            </dd>
+                            {{/if}}
+                        {{/each}}
 
+                    {{else}}
+                        <dt><a href="#">{{value.dt}}</a></dt>
+                        {{each value.dd as value1 j}}
+                            {{if j==0  }}
+                            <dd><a class="active" href="{{j}}">{{value1.txt}}</a></dd>
+                            {{else}}
+                            <dd><a href="#">{{value1.txt}}</a></dd>
+                            {{/if}}
+                        {{/each}}
+                    {{/if}}
+
+                </dl>
+                {{/each}}
+            </div>
+        </script>
+    </div>
+</div>
+<ul class="listFilter">
+    <div class="setting clearfix">
+        <script id="listFilter" type="text/html">
+            {{each listFilter as value i}}
+            {{if i==0}}
+            <li class="active"><a href="#">{{value.title}}</a><i class="iconfont icon-label_fill"></i></li>
+            {{else if i==4}}
+            <li><a href="#">{{value.title}}</a><i class="iconfont icon-packup"></i></li>
+            {{else}}
+            <li><a href="#">{{value.title}}</a></li>
+            {{/if}}
+            {{/each}}
+        </script>
+    </div>
+</ul>
+<ul class="goodsList">
+    <div class="setting clearfix">
+        <script id="listGoods" type="text/html">
+            {{each listGoods as value i}}
+            {{if i<40}}
+                <li>
+                    <dl>
+                        <dt><a href="goods.html?{{value.id}}"><img src="{{value.src}}" goodsId="{{value.id}}" alt=""></a></dt>
+                        <dd>{{value.p1}}</dd>
+                        <dd>{{value.p2}}</dd>
+                        <dd>{{value.p3}}</dd>
+                        <dd>{{value.price}}</dd>
+                    </dl>
+                </li>
+            {{/if}}
+
+            {{/each}}
+        </script>
+
+    </div>
+    <p class="pages">
+        <a href="#">首页</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">下一页</a>
+        <a href="#">尾页</a>
+    </p>
+</ul>
 
 
 

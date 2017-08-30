@@ -9,175 +9,12 @@
 	<link rel="stylesheet" href="rec/scss/common.css">
     <script src="rec/js/jquery-1.11.0.js"></script>
 	<script src="rec/js/template.js"></script>
-	<!--<script src="rec/js/index.js"></script>-->
+	<script src="rec/js/cookie.js"></script>
 </head>
 <body>
-	<div class="topContent">
-	</div>
+	<div class="topContent"></div>
 
-	<nav>
-		<div class="setting clearfix">
-			<ul class="ul_top flt clearfix">
-				<li>
-					<a href="javascript:0;" class="active">商品分类</a>
-					<ul class="ul_sub">
-						<script id="navTop" type="text/html">
-							{{each subNavList as value i}}
-							<li>
-								<a href="{{value.link}}">
-									<i class="iconfont icon-collection_fill"></i>{{value.title}}<i class="iconfont icon-enter frt"></i>
-								</a>
-							</li>
-							{{/each}}
-						</script>
-						<!--<li>
-							<a href="#">
-                                <i class="iconfont icon-collection_fill"></i>
-                                推荐品牌
-                                <i class="iconfont icon-enter frt"></i>
-							</a>
-                            <ul class="ul_detail">
-                                <li class="clearfix">
-                                    <div class="flt">
-                                        <a href="#">国际高端</a>
-                                    </div>
-                                    <div class="frt">
-                                        <a href="index.html">Louis/LV</a>
-                                        <a href="#">Chanel</a>
-                                        <a href="#">Prada</a>
-                                        <a href="#">Fendi</a>
-                                        <a href="#">Fendi</a>
-                                        <a href="#">Fendi</a>
-                                        <a href="#">Fendi</a>
-                                        <a href="#">Fendi</a>
-                                        <a href="#">Fendi</a>
-                                        <a href="#">Fendi</a>
-                                        <a href="#">Fendi</a>
-                                        <a href="#">Fendi</a>
-                                        <a href="#">Fendi</a>
-                                    </div>
 
-                                </li>
-                            </ul>
-						</li>
-						<li>
-							<a href="#">
-                                <i class="iconfont icon-collection_fill"></i>箱包<i class="iconfont icon-enter frt"></i>
-                            </a>
-						</li>
-						<li>
-							<a href="#"><i class="iconfont icon-collection_fill"></i>美妆<i class="iconfont icon-enter frt"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="iconfont icon-collection_fill"></i>服饰<i class="iconfont icon-enter frt"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="iconfont icon-collection_fill"></i>腕表<i class="iconfont icon-enter frt"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="iconfont icon-collection_fill"></i>配饰<i class="iconfont icon-enter frt"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="iconfont icon-collection_fill"></i>鞋靴<i class="iconfont icon-enter frt"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="iconfont icon-collection_fill"></i>母婴<i class="iconfont icon-enter frt"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="iconfont icon-collection_fill"></i>美酒<i class="iconfont icon-enter frt"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="iconfont icon-collection_fill"></i>美食<i class="iconfont icon-enter frt"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="iconfont icon-collection_fill"></i>家具<i class="iconfont icon-enter frt"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="iconfont icon-collection_fill"></i>电子<i class="iconfont icon-enter frt"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="iconfont icon-collection_fill"></i>办公<i class="iconfont icon-enter frt"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="iconfont icon-collection_fill"></i>礼品<i class="iconfont icon-enter frt"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="iconfont icon-collection_fill"></i>海外馆<i class="iconfont icon-enter frt"></i></a>
-                        </li>-->
-					</ul>
-				</li>
-				<li><a href="#">品牌</a></li>
-				<li><a href="#">最新</a></li>
-				<li><a href="#">女士</a></li>
-				<li><a href="#">男士</a></li>
-				<li><a href="#">生活馆</a></li>
-				<li><a href="#">海外馆</a></li>
-				<li><a href="#">时尚</a></li>
-				<li><a href="#">特惠</a></li>
-				<li><a href="#">礼品区</a></li>
-				<li>
-					<a href="#">
-						<i class="iconfont icon-coordinates_fill"></i>到店
-					</a>
-				</li>
-				<div class="ul_detail">
-					<script id="detailNav" type="text/html">
-						{{each detailNav as value}}
-						<div>
-							{{each value as data1 i}}
-							<dl>
-								{{if data1.detailTitle}}
-								<dt>
-									<a href="#">{{data1.detailTitle}}</a>
-								</dt>
-								{{/if}}
-
-								{{if data1.detailList}}
-								<dd>
-									{{each data1.detailList as data2}}
-									<a href="#">{{data2.list}}</a>
-									{{/each}}
-								</dd>
-								{{/if}}
-
-								{{if data1.detailBtn}}
-								<dt class="btn">
-									{{each data1.detailBtn as data3}}
-									<a href="#" >{{data3.list}}</a>
-									{{/each}}
-								</dt>
-								{{/if}}
-							</dl>
-							{{/each}}
-						</div>
-
-						{{/each}}
-					</script>
-				</div>
-			</ul>
-            <ul class="icon_wrap frt">
-                <li>
-                    <a href="#">
-                        <i class="iconfont icon-dynamic"></i>
-                        正牌授权，官方认证
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="iconfont icon-dynamic"></i>
-                        尊享品牌会员服务
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="iconfont icon-dynamic"></i>
-                        商务部诚信示范企业
-                    </a>
-                </li>
-            </ul>
-
-		</div>
-	</nav>
     <div class="banner">
         <div class="content">
             <ul class="slidImg">
@@ -204,47 +41,7 @@
             </div>
         </div>
     </div>
-	<div class="sid_bar">
-		<ul class="sid_nav1">
-			<li><i class="iconfont icon-service_fill"></i></li>
-			<li><i class="iconfont icon-coupons_fill"></i></li>
-			<li><i class="iconfont icon-like_fill"></i></li>
-			<li><i class="iconfont icon-mine_fill"></i></li>
-		</ul>
-		<ul class="sid_nav2">
-			<li><i class="iconfont icon-wangwang"></i></li>
-			<li><i class="iconfont icon-brush_fill"></i></li>
-			<li><i class="iconfont icon-shake"></i></li>
-			<li><i class="iconfont icon-packup"></i></li>
-		</ul>
-		<div class="sid_car" style="display: block;">
-			<h3>购物袋 <i class="iconfont icon-close"></i></h3>
-		</div>
-		<div class="sid_asset">
-			<h3>我的资产 <i class="iconfont icon-close"></i></h3>
-		</div>
-		<div class="sid_favor">
-			<h3>我喜欢的商品 <i class="iconfont icon-close"></i></h3>
-		</div>
-	</div>
-	<div class="loginBox">
-		<h3>登录第五大道 <i class="iconfont icon-close"></i></h3>
-		<form>
-			<label>登录用户名:</label><br>
-			<input type="text">
-			<label>登录密码:</label><br>
-			<input type="password">
-			<input type="button" value="登录" onclick="verify()">
-			<p class="clearfix"><a class="flt" href="#">免费注册</a> <a class="frt" href="#">忘记登录密码?</a></p>
-			<div>
-				<p>合作网站登录：</p>
-				<a href="#">QQ</a>
-				<a href="#">新浪微博</a>
-				<a href="#">微信登录</a>
-			</div>
-		</form>
 
-	</div>
 	<div class="main">
 		<div class="setting">
 			<div class="flagship_title">
@@ -254,7 +51,7 @@
 				<scirpt id="flagship1" type="text/html">
 					{{each flagship as value}}
 						<li>
-							<a href="#">
+							<a href="{{value.link}}">
 								<img data-src={{value.src}} alt="" />
 							</a>
 							<div class="flagship_box">
@@ -275,14 +72,14 @@
 				<scrip id="hotStore" type="text/html">
 					{{each hotStore as value}}
 					<li>
-						<img src="{{value.src}}" alt="sorry">
+						<a href="{{value.link}}"><img src="{{value.src}}" alt="sorry"></a>
 						<div class="hotStore_box">{{value.title}}</div>
 						<span class="topLine"></span>
 						<span class="bottomLine"></span>
 						<span class="leftLine"></span>
 						<span class="rightLine"></span>
 					</li>
-					
+
 					{{/each}}
 				</scrip>
 			</ul>
@@ -302,7 +99,7 @@
                             {{each value as item i}}
                                 {{if i==0}}
                                 <div class="stormSame_left flt">
-                                    <a href="#"><img src="{{item.src}}" alt=""></a>
+                                    <a href="{{item.link}}"><img src="{{item.src}}" alt=""></a>
                                 </div>
 
                                 {{else}}
@@ -315,7 +112,7 @@
                                                 <p>￥{{item1.price}}</p>
                                             </div>
                                             <div class="stormSameBoxPic">
-                                                <a href="#"><img src="{{item1.src}}" alt=""></a>
+                                                <a href="{{item1.link}}"><img src="{{item1.src}}" alt=""></a>
                                             </div>
                                         </div>
                                     {{/each}}
@@ -325,207 +122,6 @@
                         </li>
                     {{/each}}
                 </script>
-                <!--<li>
-                    <div class="stormSame_left flt">
-                        <a href="#"><img src="rec/images/150329283294_366x515.jpg" alt=""></a>
-                    </div>
-                    <div class="stormSame_right flt">
-                        <div class="stormSameBox">
-                            <div class="stormSameBoxTxt">
-                                <p>Emilio Pucci</p>
-                                <p>铺砌</p>
-                                <p>￥7999</p>
-                            </div>
-                            <div class="stormSameBoxPic">
-                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="stormSameBox">
-                            <div class="stormSameBoxTxt">
-                                <p>Emilio Pucci</p>
-                                <p>铺砌</p>
-                                <p>￥7999</p>
-                            </div>
-                            <div class="stormSameBoxPic">
-                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="stormSameBox">
-                            <div class="stormSameBoxTxt">
-                                <p>Emilio Pucci</p>
-                                <p>铺砌</p>
-                                <p>￥7999</p>
-                            </div>
-                            <div class="stormSameBoxPic">
-                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="stormSameBox">
-                            <div class="stormSameBoxTxt">
-                                <p>Emilio Pucci</p>
-                                <p>铺砌</p>
-                                <p>￥7999</p>
-                            </div>
-                            <div class="stormSameBoxPic">
-                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="stormSameBox">
-                            <div class="stormSameBoxTxt">
-                                <p>Emilio Pucci</p>
-                                <p>铺砌</p>
-                                <p>￥7999</p>
-                            </div>
-                            <div class="stormSameBoxPic">
-                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="stormSameBox">
-                            <div class="stormSameBoxTxt">
-                                <p>Emilio Pucci</p>
-                                <p>铺砌</p>
-                                <p>￥7999</p>
-                            </div>
-                            <div class="stormSameBoxPic">
-                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="stormSame_left flt">
-                        <a href="#"><img src="rec/images/150329283294_366x515.jpg" alt=""></a>
-                    </div>
-                    <div class="stormSame_right flt">
-                        <div class="stormSameBox">
-                            <div class="stormSameBoxTxt">
-                                <p>Emilio Pucci</p>
-                                <p>铺砌</p>
-                                <p>￥7999</p>
-                            </div>
-                            <div class="stormSameBoxPic">
-                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="stormSameBox">
-                            <div class="stormSameBoxTxt">
-                                <p>Emilio Pucci</p>
-                                <p>铺砌</p>
-                                <p>￥7999</p>
-                            </div>
-                            <div class="stormSameBoxPic">
-                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="stormSameBox">
-                            <div class="stormSameBoxTxt">
-                                <p>Emilio Pucci</p>
-                                <p>铺砌</p>
-                                <p>￥7999</p>
-                            </div>
-                            <div class="stormSameBoxPic">
-                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="stormSameBox">
-                            <div class="stormSameBoxTxt">
-                                <p>Emilio Pucci</p>
-                                <p>铺砌</p>
-                                <p>￥7999</p>
-                            </div>
-                            <div class="stormSameBoxPic">
-                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="stormSameBox">
-                            <div class="stormSameBoxTxt">
-                                <p>Emilio Pucci</p>
-                                <p>铺砌</p>
-                                <p>￥7999</p>
-                            </div>
-                            <div class="stormSameBoxPic">
-                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="stormSameBox">
-                            <div class="stormSameBoxTxt">
-                                <p>Emilio Pucci</p>
-                                <p>铺砌</p>
-                                <p>￥7999</p>
-                            </div>
-                            <div class="stormSameBoxPic">
-                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="stormSame_left flt">
-                        <a href="#"><img src="rec/images/150329283294_366x515.jpg" alt=""></a>
-                    </div>
-                    <div class="stormSame_right flt">
-                        <div class="stormSameBox">
-                            <div class="stormSameBoxTxt">
-                                <p>Emilio Pucci</p>
-                                <p>铺砌</p>
-                                <p>￥7999</p>
-                            </div>
-                            <div class="stormSameBoxPic">
-                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="stormSameBox">
-                            <div class="stormSameBoxTxt">
-                                <p>Emilio Pucci</p>
-                                <p>铺砌</p>
-                                <p>￥7999</p>
-                            </div>
-                            <div class="stormSameBoxPic">
-                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="stormSameBox">
-                            <div class="stormSameBoxTxt">
-                                <p>Emilio Pucci</p>
-                                <p>铺砌</p>
-                                <p>￥7999</p>
-                            </div>
-                            <div class="stormSameBoxPic">
-                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="stormSameBox">
-                            <div class="stormSameBoxTxt">
-                                <p>Emilio Pucci</p>
-                                <p>铺砌</p>
-                                <p>￥7999</p>
-                            </div>
-                            <div class="stormSameBoxPic">
-                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="stormSameBox">
-                            <div class="stormSameBoxTxt">
-                                <p>Emilio Pucci</p>
-                                <p>铺砌</p>
-                                <p>￥7999</p>
-                            </div>
-                            <div class="stormSameBoxPic">
-                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="stormSameBox">
-                            <div class="stormSameBoxTxt">
-                                <p>Emilio Pucci</p>
-                                <p>铺砌</p>
-                                <p>￥7999</p>
-                            </div>
-                            <div class="stormSameBoxPic">
-                                <a href="#"><img src="rec/images/150332360024_505x864_800x800.jpg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </li>-->
             </ul>
 			<div class="shopCenter">
 				<img src="rec/images/shopcenter.jpg" alt="">
@@ -1072,122 +668,7 @@
 		</div>
 	</div>
 	<hr>
-	<div class="link">
-		<!--<div class="setting clearfix">
-			<ul class="clearfix">
-				<li>
-					<a href="#"><img src="rec/images/footer_message01.jpg" alt=""></a>
-					<h4>正品保证</h4>
-					<a href="#"><p>品牌授权，官方认证</p></a>
-				</li>
-				<li>
-					<a href="#"><img src="rec/images/footer_message01.jpg" alt=""></a>
-					<h4>正品保证</h4>
-					<a href="#"><p>品牌授权，官方认证</p></a>
-				</li>
-				<li>
-					<a href="#"><img src="rec/images/footer_message01.jpg" alt=""></a>
-					<h4>正品保证</h4>
-					<a href="#"><p>品牌授权，官方认证</p></a>
-				</li>
-				<li>
-					<a href="#"><img src="rec/images/footer_message01.jpg" alt=""></a>
-					<h4>正品保证</h4>
-					<a href="#"><p>品牌授权，官方认证</p></a>
-				</li>
-				<li>
-					<a href="#"><img src="rec/images/footer_message01.jpg" alt=""></a>
-					<h4>正品保证</h4>
-					<a href="#"><p>品牌授权，官方认证</p></a>
-				</li>
-			</ul>
-			<dl>
-				<dt>服务保障</dt>
-				<dd><a href="#">品牌授权正品</a></dd>
-				<dd><a href="#">品牌客服</a></dd>
-				<dd><a href="#">预约到店体验</a></dd>
-				<dd><a href="#">7天无理由退货</a></dd>
-			</dl>
-			<dl>
-				<dt>服务保障</dt>
-				<dd><a href="#">品牌授权正品</a></dd>
-				<dd><a href="#">品牌客服</a></dd>
-				<dd><a href="#">预约到店体验</a></dd>
-				<dd><a href="#">7天无理由退货</a></dd>
-			</dl>
-			<dl>
-				<dt>服务保障</dt>
-				<dd><a href="#">品牌授权正品</a></dd>
-				<dd><a href="#">品牌客服</a></dd>
-				<dd><a href="#">预约到店体验</a></dd>
-				<dd><a href="#">7天无理由退货</a></dd>
-			</dl>
-			<dl>
-				<dt>服务保障</dt>
-				<dd><a href="#">品牌授权正品</a></dd>
-				<dd><a href="#">品牌客服</a></dd>
-				<dd><a href="#">预约到店体验</a></dd>
-				<dd><a href="#">预约到店体验</a></dd>
-				<dd><a href="#">预约到店体验</a></dd>
-				<dd><a href="#">预约到店体验</a></dd>
-				<dd><a href="#">7天无理由退货</a></dd>
-			</dl>
-			<dl>
-				<dt>服务保障</dt>
-				<dd><a href="#">品牌授权正品</a></dd>
-				<dd><a href="#">品牌客服</a></dd>
-				<dd><a href="#">预约到店体验</a></dd>
-				<dd><a href="#">7天无理由退货</a></dd>
-			</dl>
-			<dl>
-				<dt>第五大道APP</dt>
-				<dd><img src="rec/images/footer_message06.jpg" alt=""></dd>
-			</dl>
-			<dl>
-				<dt>第五大道微博</dt>
-				<dd><img src="rec/images/footer_message07.jpg" alt=""></dd>
-			</dl>
-		</div>
-		<div class="footer">
-			<p>
-				<a href="#">箱包</a> |
-				<a href="#">箱包</a> |
-				<a href="#">箱包</a> |
-				<a href="#">箱包</a> |
-				<a href="#">箱包</a> |
-				<a href="#">箱包</a> |
-				<a href="#">箱包</a> |
-				<a href="#">箱包</a> |
-				<a href="#">箱包</a>
-			</p>
-			<p>
-				<a href="#">关于第五大道</a> |
-				<a href="#">关于第五大道</a> |
-				<a href="#">合作好友</a> |
-				<a href="#">关于第五大道</a> |
-				<a href="#">关第五大道</a> |
-				<a href="#">关第五大道</a> |
-				<a href="#">五大道</a> |
-				<a href="#">五大道</a> |
-				<a href="#">五大道</a> |
-				<a href="#">大道</a> |
-			</p>
-			<p>Copyright © 2008-2016 瑞美嘉信国际信息技术（北京）有限公司  版权所有京ICP备09012701号-1 京公网安备110105007400号 食品经营许可证号：</p>
-			<p class="footerPic">
-				<a href="#">
-					<img src="rec/images/14567178388519.jpg" alt="">
-				</a>
-				<a href="#">
-					<img src="rec/images/14567178388519.jpg" alt="">
-				</a>
-				<a href="#">
-					<img src="rec/images/14567178388519.jpg" alt="">
-				</a>
-			</p>
-		</div>-->
-
-
-	</div>
+	<div class="link"></div>
 	<!--遮罩层-->
 	<div class="cover">
 	</div>

@@ -100,7 +100,7 @@ header .setting form a:hover {
     color: darkred; }
 header .setting #car {
     position: relative;
-    margin: 35px 0 0 188px;
+    margin: 35px 0 0 180px;
     border: 1px solid #ccc;
     box-shadow: 0 0 5px 2px #ccc;
     line-height: 32px; }
@@ -170,7 +170,7 @@ nav ul.ul_top li:nth-of-type(1) {
     }*/ }
 nav ul.ul_top li:nth-of-type(1) ul.ul_sub {
     display: none;
-    z-index: 1;
+    z-index: 2;
     position: absolute; }
 nav ul.ul_top li:nth-of-type(1) ul.ul_sub li:hover {
     background: #fff; }
@@ -262,7 +262,94 @@ nav div.ul_detail dl:last-child {
 
 
 
+.sid_bar {
+    z-index: 1;
+    width: 290px;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #fff;
+    border-left: 1px solid #666;
+    right: -291px; }
+.sid_bar ul {
+    position: absolute;
+    color: #c69c6d; }
+.sid_bar ul li {
+    background-color: #333;
+    margin-top: 5px;
+    border-radius: 8px 0px 0px 8px; }
+.sid_bar ul .iconfont {
+    display: inline-block;
+    font-size: 30px;
+    padding: 5px;
+    cursor: pointer; }
+.sid_bar .sid_nav1 {
+    top: 30%;
+    left: -40px; }
+.sid_bar .sid_nav2 {
+    bottom: 30px;
+    left: -40px; }
+.sid_bar > div {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 20px;
+    background-color: #fff; }
+.sid_bar > div h3 {
+    font-size: 16px;
+    line-height: 1.8;
+    border-bottom: 1px solid #ccc; }
+.sid_bar > div h3 i {
+    float: right;
+    margin-right: 60px;
+    margin-top: 2px; }
 
+.loginBox {
+    z-index: 2;
+    display: none;
+    width: 400px;
+    height: 366px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    border: 20px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px 5px #333; }
+.loginBox h3 {
+    line-height: 1.8;
+    padding: 0 5px;
+    background-color: #c8a985;
+    color: #fff;
+    padding: 5px 10px; }
+.loginBox h3 i {
+    float: right; }
+.loginBox form {
+    color: #000;
+    line-height: 2;
+    padding: 50px 90px 10px 90px; }
+.loginBox form input {
+    border: 1px solid #ccc;
+    background-color: #faffbd;
+    width: 100%;
+    line-height: 1.8; }
+.loginBox form input[type="button"] {
+    color: #fff;
+    width: 100%;
+    background-color: red;
+    margin-top: 10px;
+    line-height: 2; }
+.loginBox form a {
+    font-size: 12px;
+    color: #666; }
+.loginBox form a:hover {
+    text-decoration: underline; }
+.loginBox form div a {
+    margin-left: 10px; }
 
 
 /*footer*/
@@ -306,3 +393,15 @@ nav div.ul_detail dl:last-child {
     line-height: 2.5; }
 .link .footer a {
     color: #fff; }
+
+/*cover*/
+.cover{
+    z-index: 1;
+    display: none;
+    width: 100%;
+    height: 6000px;
+    background:rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}

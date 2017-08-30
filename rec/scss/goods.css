@@ -1,0 +1,165 @@
+.setting1 {
+  width: 1030px;
+  margin: 0 auto; }
+
+.goodsDetail .glass {
+  width: 480px;
+  height: 617px; }
+  .goodsDetail .glass #glassContent {
+    position: relative; }
+    .goodsDetail .glass #glassContent #middleBox {
+      background-color: #fff;
+      width: 480px;
+      height: 480px;
+      text-align: center;
+      box-shadow: 3px 3px 3px 3px #ccc;
+      margin-bottom: 40px; }
+      .goodsDetail .glass #glassContent #middleBox .coverContent {
+        display: inline-block;
+        position: relative; }
+        .goodsDetail .glass #glassContent #middleBox .coverContent img {
+          width: 372px;
+          height: 470px; }
+        .goodsDetail .glass #glassContent #middleBox .coverContent #cover {
+          display: none;
+          position: absolute;
+          width: 186px;
+          height: 235px;
+          background-color: rgba(0, 0, 0, 0.5);
+          top: 0;
+          left: 0; }
+    .goodsDetail .glass #glassContent #smallBox {
+      overflow: hidden;
+      position: relative; }
+      .goodsDetail .glass #glassContent #smallBox .btn {
+        text-align: center;
+        line-height: 85px;
+        width: 20px;
+        top: 0;
+        position: absolute;
+        background-color: #ddfff8;
+        cursor: pointer; }
+        .goodsDetail .glass #glassContent #smallBox .btn:nth-of-type(2) {
+          right: 0; }
+      .goodsDetail .glass #glassContent #smallBox ul {
+        width: 440px;
+        margin-left: 20px; }
+        .goodsDetail .glass #glassContent #smallBox ul li {
+          float: left;
+          border: 1px solid #ccc;
+          border-right: 0;
+          list-style: none;
+          line-height: 85px; }
+          .goodsDetail .glass #glassContent #smallBox ul li:last-child {
+            border-right: 1px solid #ccc; }
+          .goodsDetail .glass #glassContent #smallBox ul li img {
+            height: 85px;
+            margin: 0 10px; }
+    .goodsDetail .glass #glassContent #largeBox {
+      display: none;
+      position: absolute;
+      overflow: hidden;
+      right: -392px;
+      border: 1px solid #CCC;
+      top: 0;
+      width: 372px;
+      height: 470px;
+      z-index: 2; }
+      .goodsDetail .glass #glassContent #largeBox img {
+        height: 940px;
+        position: absolute; }
+.goodsDetail .goodsInfo {
+  width: 510px;
+  float: right;
+  line-height: 34px;
+  padding-top: 20px; }
+  .goodsDetail .goodsInfo li:nth-of-type(1), .goodsDetail .goodsInfo li:nth-of-type(2), .goodsDetail .goodsInfo li:nth-of-type(3) {
+    color: #000;
+    font-size: 14px;
+    font-weight: 900; }
+    .goodsDetail .goodsInfo li:nth-of-type(1) span, .goodsDetail .goodsInfo li:nth-of-type(2) span, .goodsDetail .goodsInfo li:nth-of-type(3) span {
+      color: red; }
+    .goodsDetail .goodsInfo li:nth-of-type(1) img, .goodsDetail .goodsInfo li:nth-of-type(2) img, .goodsDetail .goodsInfo li:nth-of-type(3) img {
+      float: right; }
+  .goodsDetail .goodsInfo li:nth-of-type(5) {
+    border-top: 1px dashed #000;
+    color: #f00; }
+    .goodsDetail .goodsInfo li:nth-of-type(5) span {
+      font-size: 18px; }
+  .goodsDetail .goodsInfo li:nth-of-type(6) {
+    position: relative; }
+    .goodsDetail .goodsInfo li:nth-of-type(6) i {
+      position: absolute;
+      color: #000;
+      border: 1px solid #000;
+      right: 0;
+      top: 0; }
+  .goodsDetail .goodsInfo li:nth-of-type(7) a {
+    color: #f00; }
+  .goodsDetail .goodsInfo li:nth-of-type(8) {
+    color: #000; }
+    .goodsDetail .goodsInfo li:nth-of-type(8) a {
+      display: inline-block;
+      padding: 0 2px;
+      color: #000;
+      border: 1px solid #cccccc;
+      line-height: 28px; }
+      .goodsDetail .goodsInfo li:nth-of-type(8) a:nth-of-type(1) {
+        background: url("../images/new_5luxbg.png") -228px -44px; }
+      .goodsDetail .goodsInfo li:nth-of-type(8) a:hover {
+        border-color: #c69c6d;
+        color: #c69c6d; }
+  .goodsDetail .goodsInfo li:nth-of-type(9) {
+    color: #000; }
+    .goodsDetail .goodsInfo li:nth-of-type(9) span {
+      border: 1px solid #ccc;
+      display: inline-block;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      cursor: p; }
+    .goodsDetail .goodsInfo li:nth-of-type(9) input {
+      width: 80px;
+      text-align: center; }
+  .goodsDetail .goodsInfo li:nth-of-type(10) .goodsInfoLiLeft {
+    border-right: 1px dashed #ccc;
+    padding-right: 10px; }
+  .goodsDetail .goodsInfo li:nth-of-type(10) .goodsInfoLiRight {
+    position: relative;
+    width: 160px;
+    line-height: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 34px 0 0 5px; }
+    .goodsDetail .goodsInfo li:nth-of-type(10) .goodsInfoLiRight i {
+      float: left;
+      width: 27px;
+      height: 26px;
+      background: url("../images/149697742783_27x26.jpg");
+      margin-right: 10px; }
+    .goodsDetail .goodsInfo li:nth-of-type(10) .goodsInfoLiRight span {
+      color: #f00; }
+    .goodsDetail .goodsInfo li:nth-of-type(10) .goodsInfoLiRight img {
+      position: absolute;
+      top: -120px;
+      left: 0;
+      display: none; }
+    .goodsDetail .goodsInfo li:nth-of-type(10) .goodsInfoLiRight:hover img {
+      display: block; }
+  .goodsDetail .goodsInfo li:nth-of-type(11) button {
+    width: 100px;
+    color: #fff;
+    padding: 4px;
+    margin: 10px; }
+    .goodsDetail .goodsInfo li:nth-of-type(11) button:nth-of-type(1) {
+      background: red; }
+    .goodsDetail .goodsInfo li:nth-of-type(11) button:nth-of-type(2) {
+      background-color: #e66b2d; }
+  .goodsDetail .goodsInfo li:nth-of-type(12) {
+    display: none; }
+  .goodsDetail .goodsInfo li:nth-of-type(13) dl {
+    margin-right: 50px; }
+    .goodsDetail .goodsInfo li:nth-of-type(13) dl dd {
+      color: #000; }
+
+/*# sourceMappingURL=goods.css.map */

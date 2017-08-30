@@ -1,0 +1,49 @@
+.main .carStep {
+  margin: 30px 0 30px;
+  height: 44px;
+  background: url("../images/cart_step.jpg") 510px 0px no-repeat; }
+.main table {
+  color: #000; }
+  .main table tr {
+    border-bottom: 1px solid #777; }
+    .main table tr th {
+      font-size: 16px;
+      font-weight: 100;
+      line-height: 34px;
+      background: #ccc; }
+    .main table tr td:nth-of-type(6) a {
+      display: inline-block;
+      line-height: 20px;
+      width: 20px;
+      text-align: center;
+      background-color: #c69c6d;
+      color: #fff; }
+    .main table tr td span {
+      margin: 5px;
+      display: inline-block;
+      width: 50px;
+      line-height: 23px;
+      border: 1px solid #ccc; }
+    .main table tr td img {
+      width: 95px;
+      height: 95px; }
+    .main table tr td a {
+      color: blue; }
+.main .carBottom {
+  line-height: 90px; }
+  .main .carBottom .carBottomLeft {
+    padding-left: 10px; }
+  .main .carBottom .carBottomRight button {
+    padding: 4px 5px;
+    background: red;
+    color: #fff;
+    margin-left: 10px; }
+  .main .carBottom a {
+    color: #666; }
+  .main .carBottom span {
+    color: red;
+    margin-right: 10px; }
+    .main .carBottom span:nth-of-type(2) {
+      font-size: 24px; }
+
+/*# sourceMappingURL=car.css.map */

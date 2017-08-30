@@ -14,9 +14,9 @@
             </li>
         </ul>
         <ul class="top_right frt">
-            <li class="login"><a href="#">登录</a></li>
+            <li class="login" onclick="login()"><a href="#">登录</a></li>
             <li class="for_color">|</li>
-            <li>
+            <li class="logOut">
                 <i class="hav_gift flt"></i>
                 <a href="register.html" class="flt">注册</a>
             </li>
@@ -65,13 +65,338 @@
             </div>
         </form>
         <div id="car" class="flt">
-            <i class="iconfont icon-service_fill"></i>
-            购物车（<span id="car_num">0</span>）
-            <i class="iconfont icon-enter"></i>
-            <div id="car_content">
-                <p>购物车暂时还没有添加任何商品</p>
-                <p>快去选购吧</p>
-            </div>
+            <a href="car.html">
+                <i class="iconfont icon-service_fill"></i>
+                购物车（<span id="car_num">0</span>）
+                <i class="iconfont icon-enter"></i>
+                <div id="car_content">
+                    <p>购物车暂时还没有添加任何商品</p>
+                    <p>快去选购吧</p>
+                </div>
+            </a>
         </div>
     </div>
 </header>
+<nav>
+    <div class="setting clearfix">
+        <ul class="ul_top flt clearfix">
+            <li>
+                <a href="javascript:0;" class="active">商品分类</a>
+                <ul class="ul_sub">
+                    <script id="navTop" type="text/html">
+                        {{each subNavList as value i}}
+                        <li>
+                            <a href="{{value.link}}">
+                                <i class="iconfont icon-collection_fill"></i>{{value.title}}<i class="iconfont icon-enter frt"></i>
+                            </a>
+                        </li>
+                        {{/each}}
+                    </script>
+                    <!--<li>
+                        <a href="#">
+                            <i class="iconfont icon-collection_fill"></i>
+                            推荐品牌
+                            <i class="iconfont icon-enter frt"></i>
+                        </a>
+                        <ul class="ul_detail">
+                            <li class="clearfix">
+                                <div class="flt">
+                                    <a href="#">国际高端</a>
+                                </div>
+                                <div class="frt">
+                                    <a href="index.html">Louis/LV</a>
+                                    <a href="#">Chanel</a>
+                                    <a href="#">Prada</a>
+                                    <a href="#">Fendi</a>
+                                    <a href="#">Fendi</a>
+                                    <a href="#">Fendi</a>
+                                    <a href="#">Fendi</a>
+                                    <a href="#">Fendi</a>
+                                    <a href="#">Fendi</a>
+                                    <a href="#">Fendi</a>
+                                    <a href="#">Fendi</a>
+                                    <a href="#">Fendi</a>
+                                    <a href="#">Fendi</a>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-collection_fill"></i>箱包<i class="iconfont icon-enter frt"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="iconfont icon-collection_fill"></i>美妆<i class="iconfont icon-enter frt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="iconfont icon-collection_fill"></i>服饰<i class="iconfont icon-enter frt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="iconfont icon-collection_fill"></i>腕表<i class="iconfont icon-enter frt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="iconfont icon-collection_fill"></i>配饰<i class="iconfont icon-enter frt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="iconfont icon-collection_fill"></i>鞋靴<i class="iconfont icon-enter frt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="iconfont icon-collection_fill"></i>母婴<i class="iconfont icon-enter frt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="iconfont icon-collection_fill"></i>美酒<i class="iconfont icon-enter frt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="iconfont icon-collection_fill"></i>美食<i class="iconfont icon-enter frt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="iconfont icon-collection_fill"></i>家具<i class="iconfont icon-enter frt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="iconfont icon-collection_fill"></i>电子<i class="iconfont icon-enter frt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="iconfont icon-collection_fill"></i>办公<i class="iconfont icon-enter frt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="iconfont icon-collection_fill"></i>礼品<i class="iconfont icon-enter frt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="iconfont icon-collection_fill"></i>海外馆<i class="iconfont icon-enter frt"></i></a>
+                    </li>-->
+                </ul>
+            </li>
+            <li><a href="#">品牌</a></li>
+            <li><a href="#">最新</a></li>
+            <li><a href="#">女士</a></li>
+            <li><a href="#">男士</a></li>
+            <li><a href="#">生活馆</a></li>
+            <li><a href="#">海外馆</a></li>
+            <li><a href="#">时尚</a></li>
+            <li><a href="#">特惠</a></li>
+            <li><a href="#">礼品区</a></li>
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-coordinates_fill"></i>到店
+                </a>
+            </li>
+            <div class="ul_detail">
+                <script id="detailNav" type="text/html">
+                    {{each detailNav as value}}
+                    <div>
+                        {{each value as data1 i}}
+                        <dl>
+                            {{if data1.detailTitle}}
+                            <dt>
+                                <a href="#">{{data1.detailTitle}}</a>
+                            </dt>
+                            {{/if}}
+
+                            {{if data1.detailList}}
+                            <dd>
+                                {{each data1.detailList as data2}}
+                                <a href="#">{{data2.list}}</a>
+                                {{/each}}
+                            </dd>
+                            {{/if}}
+
+                            {{if data1.detailBtn}}
+                            <dt class="btn">
+                                {{each data1.detailBtn as data3}}
+                                <a href="#" >{{data3.list}}</a>
+                                {{/each}}
+                            </dt>
+                            {{/if}}
+                        </dl>
+                        {{/each}}
+                    </div>
+
+                    {{/each}}
+                </script>
+            </div>
+        </ul>
+        <ul class="icon_wrap frt">
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-dynamic"></i>
+                    正牌授权，官方认证
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-dynamic"></i>
+                    尊享品牌会员服务
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-dynamic"></i>
+                    商务部诚信示范企业
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+<div class="sid_bar">
+    <ul class="sid_nav1">
+        <li><i class="iconfont icon-service_fill"></i></li>
+        <li><i class="iconfont icon-coupons_fill"></i></li>
+        <li><i class="iconfont icon-like_fill"></i></li>
+        <li><i class="iconfont icon-mine_fill"></i></li>
+    </ul>
+    <ul class="sid_nav2">
+        <li><i class="iconfont icon-wangwang"></i></li>
+        <li><i class="iconfont icon-brush_fill"></i></li>
+        <li><i class="iconfont icon-shake"></i></li>
+        <li><i class="iconfont icon-packup"></i></li>
+    </ul>
+    <div class="sid_car" style="display: block;">
+        <h3>购物袋 <i class="iconfont icon-close"></i></h3>
+    </div>
+    <div class="sid_asset">
+        <h3>我的资产 <i class="iconfont icon-close"></i></h3>
+    </div>
+    <div class="sid_favor">
+        <h3>我喜欢的商品 <i class="iconfont icon-close"></i></h3>
+    </div>
+</div>
+<div class="loginBox">
+    <h3>登录第五大道 <i class="iconfont icon-close"></i></h3>
+    <form>
+        <label>登录用户名:</label><br>
+        <input type="text">
+        <label>登录密码:</label><br>
+        <input type="password">
+        <input type="button" value="登录" onclick="verify()">
+        <p class="clearfix"><a class="flt" href="#">免费注册</a> <a class="frt" href="#">忘记登录密码?</a></p>
+        <div>
+            <p>合作网站登录：</p>
+            <a href="#">QQ</a>
+            <a href="#">新浪微博</a>
+            <a href="#">微信登录</a>
+        </div>
+    </form>
+
+</div>
+<div class="cover">
+</div>
+<script>
+
+    var sidBar=(function(){
+        var flagSidBar=false;
+        function sidBarInit(id){
+            var $sidBar=$(id);
+            /*绑定关闭按钮事件*/
+            $('.sid_bar>div i').click(function () {
+                $sidBar.stop().animate({
+                    'right':-291
+                });
+                flagSidBar=false;
+            })
+            $('.sid_bar>.sid_nav1>li:not(:last)').click(function () {
+                var $sidBarDiv=$sidBar.children('div');
+                if(flagSidBar==true){//侧边栏是开启状态
+                    if(flagLogin||$(this).index()==0){
+                        if($sidBarDiv.eq($(this).index()).css('display')=='block'){
+                            $sidBar.stop().animate({
+                                'right':-291
+                            });
+                            flagSidBar=false;
+                        }else{
+                            $sidBarDiv.eq($(this).index()).css({
+                                'display':'block'
+                            }).siblings('div').css({
+                                'display':'none'
+                            })
+                            flagSidBar=true;
+                        }
+                    }else{
+                        login();
+                    }
+
+                }else{//侧边栏是关闭状态
+                    if(flagLogin||$(this).index()==0){
+                        $sidBar.stop().animate({
+                            'right':0
+                        });
+                        $sidBarDiv.eq($(this).index()).css({
+                            'display':'block'
+                        }).siblings('div').css({
+                            'display':'none'
+                        })
+                        flagSidBar=true;
+                    }
+                    else{
+                        login();
+                    }
+                }
+            })
+        }
+        return{
+            sidBarInit:sidBarInit
+        }
+    })();
+
+    /*导航栏加载*/
+    function recover() {
+        $('.ul_sub').hide();
+        $('.ul_detail').hide();
+        $(window).off();
+        $('.cover').hide().css({"top":0});
+    }
+    $.get('rec/data/subNav.json', function (data) {
+        var html = template('navTop', data);
+        $('.ul_sub').html(html);
+
+        /*三级菜单切换事件绑定*/
+        $('.ul_top li:first').on('mouseenter',function () {
+            $('.ul_sub').show();
+            $('.cover').show().css({"top":178-$(window).scrollTop()});
+            $(window).on('scroll',function(){
+                $('.cover').css({"top": 178-$(window).scrollTop()});
+            })
+        }).on('mouseout',function(e){
+            if(e.pageY<$(this).offset().top){
+                recover();
+            }
+
+        })
+        $('.ul_sub li').on('mouseenter', function () {
+            var num = $(this).index();
+            $('.ul_detail').show().css({"top":36*(num+1)});
+            $('.ul_detail').find('div').eq(num).show().siblings().hide();
+
+        });
+        $('.ul_sub').on('mouseleave',function(e){
+            if (e.pageX < $('.ul_sub').offset().left||e.pageY>$('.ul_sub').offset().top+$('.ul_sub').height()){
+                recover();
+            }
+        })
+        $('.ul_detail').on('mouseenter',function () {
+            $('.ul_sub').show();
+        }).on('mouseleave', function () {
+            recover();
+        })
+    });
+
+    $.get('rec/data/detailNav.json', function (data) {
+        var html = template('detailNav', data);
+        $('.ul_detail').html(html);
+    });
+
+    /*侧边栏调用*/
+    sidBar.sidBarInit('.sid_bar');
+
+
+    $('#car').on('mouseenter', function () {
+        $(this).find('#car_content').stop().show(500);
+    }).on('mouseleave', function () {
+        $(this).find('#car_content').stop().hide(500);
+    })
+
+
+
+</script>

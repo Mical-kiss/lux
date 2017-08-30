@@ -6,12 +6,172 @@
     <link rel="stylesheet" type="text/css" href="rec/fonts/iconfont.css">
     <link rel="stylesheet" href="rec/css/ba.css">
     <link rel="stylesheet" href="rec/scss/common.css">
+    <link rel="stylesheet" href="rec/scss/goods.css">
     <script src="rec/js/jquery-1.11.0.js"></script>
     <script src="rec/js/template.js"></script>
+    <script src="rec/js/cookie.js"></script>
 </head>
 <body>
 <div class="topContent"></div>
+<div class="goodsDetail">
+    <div class="setting1 clearfix">
 
+        <script id="goodsDetail" type="text/html">
+            <div class="glass flt">
+                <div id="glassContent">
+                    <div id="middleBox">
+                        <div class="coverContent">
+                            <img src="rec/images/150313182024_387x490.JPG" alt="">
+                            <div id="cover"></div>
+                        </div>
+
+                    </div>
+                    <div id="largeBox" >
+                        <img src="rec/images/150313182024_387x490.JPG" alt="">
+                    </div>
+                    <div id="smallBox" class="clearfix">
+                        <div class="btn">
+                            &lt;
+                        </div>
+                        <ul class="clearfix">
+                            <li>
+                                <img src="{{src}}" alt="">
+                            </li>
+                            <li>
+                                <img src="{{src1}}" alt="">
+                            </li>
+                            <li>
+                                <img src="{{src2}}" alt="">
+                            </li>
+                        </ul>
+
+                        <div class="btn">
+                            &gt;
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="goodsInfo">
+                <ul>
+                    <li>
+                        Lvanvin <span>海外直购 包邮免税</span><img src="rec/images/14319500704644.jpg" alt="">
+                    </li>
+                    <li>
+                        {{p2}}
+                    </li>
+                    <li>
+                        {{p3}}
+                    </li>
+                    <li>
+                        货号：{{id}}
+                    </li>
+                    <li>
+                        海外到手价：<span>{{price}}</span>
+                    </li>
+                    <li>
+                        国内参考价：<sapn>{{price1}}</sapn>
+                        <div class="member">
+                            <i class="iconfont icon-collection">会员价</i>
+                            <!--<dl class="menberBox" style="position:absolute;">
+                                <dt>如何享受会员价</dt>
+                                <dd>砖石/皇冠卡：￥ 235</dd>
+                                <dd>金/银冠卡：￥ 234</dd>
+                                <dd>红卡：￥ 233</dd>
+                            </dl>-->
+                        </div>
+                    </li>
+                    <li>
+                        优惠信息：<br>
+                        <span>
+                        <a href="#">订单满9999元简直1199元时尚管家服务</a>
+                    </span>
+                    </li>
+                    <li>
+                        颜色：&nbsp;&nbsp;&nbsp;
+                        <a href="#">深紫色</a>
+                        <a href="#">卡其色</a>
+                    </li>
+                    <li>
+                        数量：&nbsp;&nbsp;&nbsp;
+                        <span id="decrease">-</span>
+                        <input id="buyNum" type="txt" value="1">
+                        <span id="increase">+</span>
+                    </li>
+                    <li class="clearfix">
+                        <div class="goodsInfoLiLeft flt">
+                            <p>国际运费：第五大道承担</p>
+                            <p>海关关税：第五大道承担</p>
+                            <p>发货方：11-15个工作日 YOOX集合店发货</p>
+                            <p>温馨提示：本商品不支持7天无理由退换货 不支持货到付款</p>
+                        </div>
+                        <div class="goodsInfoLiRight flt">
+                            <i></i>
+                            <p>扫描下载手机客户端</p>
+                            <p><span>移动端立减￥10</span></p>
+                            <img src="rec/images/qr.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <button id="buyBtn">
+                            立即购买
+                        </button>
+                        <button id="addCar" goods-id="{{id}}" goods-price="{{price}}">
+                            <i class="iconfont icon-service_fill"></i>加入购物车
+                        </button>
+                    </li>
+                    <li class="goodsAd">
+                        <p>商品成功放入购物车</p>
+                        <p>共计￥000元，可以去购物袋结算</p>
+                        <dl>
+                            <dt>同类商品推荐</dt>
+                            <dd>
+                                <img src="" alt="">
+                                黑色牛皮A4 ￥1123
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>同类商品推荐</dt>
+                            <dd>
+                                <img src="" alt="">
+                                黑色牛皮A4 ￥1123
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>同类商品推荐</dt>
+                            <dd>
+                                <img src="" alt="">
+                                黑色牛皮A4 ￥1123
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="flt">
+                            <dt><img src="rec/images/zpbz.jpg" alt=""></dt>
+                            <dd>正品保证</dd>
+                        </dl>
+                        <dl class="flt">
+                            <dt><img src="rec/images/zpbz.jpg" alt=""></dt>
+                            <dd>正品保证</dd>
+                        </dl>
+                        <dl class="flt">
+                            <dt><img src="rec/images/zpbz.jpg" alt=""></dt>
+                            <dd>正品保证</dd>
+                        </dl>
+                        <dl class="flt">
+                            <dt><img src="rec/images/zpbz.jpg" alt=""></dt>
+                            <dd>正品保证</dd>
+                        </dl>
+                        <dl class="flt">
+                            <dt><img src="rec/images/zpbz.jpg" alt=""></dt>
+                            <dd>正品保证</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </script>
+    </div>
+
+</div>
 
 
 

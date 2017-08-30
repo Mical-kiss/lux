@@ -123,6 +123,7 @@ header .setting #car {
     box-shadow: 0 2px 5px 2px #ccc; }
 
 nav {
+  z-index: 3;
   width: 100%;
   min-width: 1210px;
   background: linear-gradient(#333333, #050404); }
@@ -294,10 +295,10 @@ nav {
   .banner .slidImg li:nth-of-type(8) {
     background: url(../images/149247926655_1440x520.jpg) top center no-repeat; }
   .banner .slidImg li a {
-    /*width: 100%;
+    width: 100%;
     height: 100%;
     display: block;
-    opacity: 0;*/ }
+    opacity: 0; }
 .banner .slidNav {
   position: absolute;
   left: 50%;
@@ -672,6 +673,9 @@ nav {
     position: relative;
     border: 1px solid #ccc;
     margin-right: 6px; }
+    .main .classBags_list .classBags_right .classBags_right_big img, .main .classTime_list .classBags_right .classBags_right_big img, .main .exquisite_list .classBags_right .classBags_right_big img, .main .cosmetics_list .classBags_right .classBags_right_big img, .main .shoesAndApp_list .classBags_right .classBags_right_big img {
+      width: 390px;
+      height: 370px; }
     .main .classBags_list .classBags_right .classBags_right_big .classBags_right_big_txt, .main .classTime_list .classBags_right .classBags_right_big .classBags_right_big_txt, .main .exquisite_list .classBags_right .classBags_right_big .classBags_right_big_txt, .main .cosmetics_list .classBags_right .classBags_right_big .classBags_right_big_txt, .main .shoesAndApp_list .classBags_right .classBags_right_big .classBags_right_big_txt {
       position: absolute;
       width: 300px;
