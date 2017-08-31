@@ -30,7 +30,7 @@ $(function () {
         var vefifyNumPut=$('#verifyNum').val();
         var access=$("input[type='checkbox']").is(':checked');
         var data=null;
-        if(!isTelCode(cellNumber)){
+        /*if(!isTelCode(cellNumber)){
             alert('号码格式错误')
             return false;
         }else if(password!=pswForsure){
@@ -41,15 +41,16 @@ $(function () {
             return false;
         }else if(!access){
             alert('请同意用户手册');
-        }
+        }*/
         data={
             "type":"register",
             "username":cellNumber,
             "password":pswForsure
         }
-        $.post('rec/data/userData.php',data,function (data) {
-            alert("注册成功");
 
+        $.post('rec/data/userData.php',data,function (data) {
+            console.log(data);
+            alert("注册成功");
         })
 
     })

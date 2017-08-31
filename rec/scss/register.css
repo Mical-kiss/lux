@@ -86,7 +86,8 @@ header i {
   margin: auto;
   width: 500px;
   height: 300px;
-  padding: 20px 40px; }
+  padding: 20px 40px;
+  z-index: 2;}
   .getNumBox h2 {
     color: #000;
     border-bottom: 1px solid #ccc; }

@@ -91,26 +91,27 @@ window.onload=function() {
 
     $.get('rec/data/pic.json', function (data) {
 
+        /*------------banner-----------*/
+        var html = template('banner', data);
+        $('.content .slidImg').html(html);
+        /*轮播图调用*/
+        banner.bannerInit('.content',true,'red','#fff');
+
+
+
         /*----------flagship-----------*/
-        var html = template('flagship1', data);
+        html = template('flagship1', data);
         $('.flagship_list').html(html);
-        $(".flagship_list img").each(function () {
-            $(this).attr("src", $(this).attr("data-src"));
-        });
 
         /*-----------hotStore-----------*/
          html = template('hotStore', data);
         $('.hotStore_list').html(html);
-        $(".hotStore_list img").each(function () {
-            $(this).attr("src", $(this).attr("data-src"));
-        });
+
 
         /*-----------storeSame-----------*/
          html = template('storeSameContent', data);
         $('.storeSame_content').html(html);
-        $(".storeSame_content img").each(function () {
-            $(this).attr("src", $(this).attr("data-src"));
-        });
+
 
         /*---------classicBags---------*/
          html = template('classBagsLeftList', data.shopCenter1);
@@ -154,7 +155,7 @@ window.onload=function() {
          html = template('cosmeticsLeftList', data.shopCenter4);
         $('.cosmetics_list .classBagsLeftList').html(html);
          html = template('slidImg4', data.shopCenter4);
-        $('.cosmetics_list  .slidImg').html(html);
+        $('.cosmetics_list .slidImg').html(html);
         /*调用一次轮播模块*/
         banner.bannerInit('.cosmetics_list .smallBanner',false,'#c8a985','#ccc',true);
          html = template('shopCenter1cosmetics', data.shopCenter4);
@@ -191,7 +192,6 @@ window.onload=function() {
     });
 
 
-    /*轮播图调用*/
-    banner.bannerInit('.content',true,'red','#fff');
+
 
 }

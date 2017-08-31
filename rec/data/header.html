@@ -284,7 +284,7 @@
 <div class="cover">
 </div>
 <script>
-
+    /*侧边栏模块函数定义*/
     var sidBar=(function(){
         var flagSidBar=false;
         function sidBarInit(id){
@@ -339,6 +339,49 @@
             sidBarInit:sidBarInit
         }
     })();
+    /*弹出框拖动函数定义*/
+    var drag=(function(){
+        function drag(el){
+            var dragBox=$(el);
+            var mHead=dragBox.find('h3');
+            mHead.on('mousedown',function(e){
+                var iTop=e.pageY-$(this).offset().top;
+                var iLeft=e.pageX-$(this).offset().left;
+                dragBox.css({'left':dragBox.offset().left,'top':dragBox.offset().top});
+                dragBox.css({"margin":0});
+                $(document).on('mousemove',function(e){
+                    var positionTop=e.pageY-iTop-20;
+                    var positionLeft=e.pageX-iLeft-20;
+
+                    console.log($(window).height()-dragBox.height());
+                    if(positionTop<0){
+                        positionTop=0;
+                    }else if(positionTop>$(window).height()-dragBox.height()-40){
+                        positionTop=$(window).height()-dragBox.height()-40;
+                    }
+                    if(positionLeft<0){
+                        positionLeft=0;
+                    }else if(positionLeft>$(window).width()-dragBox.width()-40){
+                        positionLeft=$(window).width()-dragBox.width()-40;
+                    }
+
+                    dragBox.css({'left':positionLeft,'top':positionTop});
+
+                }).on('mouseup',function () {
+                    $(document).off();
+                })
+
+                /*组织浏览器默认行为*/
+                return false;
+            })
+
+        }
+
+
+        return {
+            init:drag
+        }
+    })();
 
     /*导航栏加载*/
     function recover() {
@@ -390,13 +433,13 @@
     /*侧边栏调用*/
     sidBar.sidBarInit('.sid_bar');
 
-
+    /*购物车划过*/
     $('#car').on('mouseenter', function () {
         $(this).find('#car_content').stop().show(500);
     }).on('mouseleave', function () {
         $(this).find('#car_content').stop().hide(500);
     })
 
-
-
+    /*拖动调用*/
+    drag.init('.loginBox');
 </script>

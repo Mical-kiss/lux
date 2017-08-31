@@ -222,3 +222,71 @@
     }
   }
 }
+.goodsImg{
+  margin-top: 30px;
+  .goodsImgLeft{
+    width:800px;
+    .goodsImgNavHead{
+      span{
+        display: inline-block;
+        cursor: pointer;
+        padding:5px 10px;
+        margin-right: 50px;
+        background: #000;
+        color:#fff;
+      }
+    }
+    .goodsImgNav{
+      margin-top:10px;
+      //background:url('../images/xian.png') 0px 9px repeat-x;
+      border: 1px solid #666;
+      background-color: #CCC;
+      li{
+        line-height:2;
+        span{
+          display: inline-block;
+          width: 16px;
+          height: 13px;
+          border-radius:50%;
+          background-color: #666;
+          &.active{
+            background-color: darkred;
+          }
+        }
+        float: left;
+        width: 99px;
+        text-align: center;
+      }
+
+
+    }
+  }
+  .goodsImgRight{
+    border: 1px solid #ccc;
+    width: 200px;
+    ul{
+      text-align: center;
+    }
+    div{
+      h2{
+        text-align: center;
+        line-height: 3;
+      }
+      dl{
+        margin: 0 auto;
+        border-bottom:1px solid #ccc;
+        padding:10px ;
+        dt{
+          height: 250px;
+          text-align: center;
+        }
+        dd{
+          text-indent:2em;
+        }
+        img{
+          width: 150px;
+        }
+      }
+    }
+  }
+}

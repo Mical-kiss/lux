@@ -9,6 +9,7 @@ $(function(){
     });
     $('.link').load('rec/data/link.html');
 
+    /*定义放大镜函数*/
     function glassBig(el){
         var mEl=$(el);
         mEl.find('#smallBox li').mouseenter(function () {
@@ -72,7 +73,7 @@ $(function(){
            if(value.id==str.split('?')[1]){
 
                var html=template('goodsDetail',value);
-               $('.goodsDetail .setting1').html(html);
+               $('.goodsDetail .goodsDetail').html(html);
 
 
                var $increase=$('#increase'),
@@ -121,6 +122,26 @@ $(function(){
                return false;
            }
         })
+    })
+
+
+    /*设置导航fixed定位*/
+    $(document).on('scroll',function(){
+        if($(document).scrollTop()>770){
+            $('.goodsImgNav').css(
+                {
+                    "position":"fixed",
+                    "top":0,
+                    "left":196
+                }
+            )
+        }else{
+            $('.goodsImgNav').css(
+                {
+                    "position":"static",
+                }
+            )
+        }
     })
 })
 

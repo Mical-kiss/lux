@@ -1,4 +1,34 @@
 {
+  "banner":[
+    {
+      "src":"rec/images/149247926655_1440x520.jpg",
+      "link":"list.html"
+    },
+    {
+      "src":"rec/images/150276468256_1440x520.jpg",
+      "link":"list.html"
+    },
+    {
+      "src":"rec/images/150294123562_1440x520.jpg",
+      "link":"list.html"
+    },
+    {
+      "src":"rec/images/150302135969_1440x520.jpg",
+      "link":"list.html"
+    },
+    {
+      "src":"rec/images/150303778167_1440x520.jpg",
+      "link":"list.html"
+    },
+    {
+      "src":"rec/images/150336797126_1440x520.jpg",
+      "link":"list.html"
+    },
+    {
+      "src":"rec/images/150345614382_1440x520.jpg",
+      "link":"list.html"
+    }
+  ],
   "flagship":[
     {
       "src":"rec/images/150209001064_236x329.jpg",

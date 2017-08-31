@@ -162,4 +162,52 @@
     .goodsDetail .goodsInfo li:nth-of-type(13) dl dd {
       color: #000; }
 
+.goodsImg {
+  margin-top: 30px; }
+  .goodsImg .goodsImgLeft {
+    width: 800px; }
+    .goodsImg .goodsImgLeft .goodsImgNavHead span {
+      display: inline-block;
+      cursor: pointer;
+      padding: 5px 10px;
+      margin-right: 50px;
+      background: #000;
+      color: #fff; }
+    .goodsImg .goodsImgLeft .goodsImgNav {
+      margin-top: 10px;
+      border: 1px solid #666;
+      background-color: #CCC; }
+      .goodsImg .goodsImgLeft .goodsImgNav li {
+        line-height: 2;
+        float: left;
+        width: 99px;
+        text-align: center; }
+        .goodsImg .goodsImgLeft .goodsImgNav li span {
+          display: inline-block;
+          width: 16px;
+          height: 13px;
+          border-radius: 50%;
+          background-color: #666; }
+          .goodsImg .goodsImgLeft .goodsImgNav li span.active {
+            background-color: darkred; }
+  .goodsImg .goodsImgRight {
+    border: 1px solid #ccc;
+    width: 200px; }
+    .goodsImg .goodsImgRight ul {
+      text-align: center; }
+    .goodsImg .goodsImgRight div h2 {
+      text-align: center;
+      line-height: 3; }
+    .goodsImg .goodsImgRight div dl {
+      margin: 0 auto;
+      border-bottom: 1px solid #ccc;
+      padding: 10px; }
+      .goodsImg .goodsImgRight div dl dt {
+        height: 250px;
+        text-align: center; }
+      .goodsImg .goodsImgRight div dl dd {
+        text-indent: 2em; }
+      .goodsImg .goodsImgRight div dl img {
+        width: 150px; }
+
 /*# sourceMappingURL=goods.css.map */

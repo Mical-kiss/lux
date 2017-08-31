@@ -294,11 +294,10 @@ nav {
     background: url(../images/150345614382_1440x520.jpg) top center no-repeat; }
   .banner .slidImg li:nth-of-type(8) {
     background: url(../images/149247926655_1440x520.jpg) top center no-repeat; }
-  .banner .slidImg li a {
+  .banner .slidImg li img {
     width: 100%;
     height: 100%;
-    display: block;
-    opacity: 0; }
+    display: block; }
 .banner .slidNav {
   position: absolute;
   left: 50%;

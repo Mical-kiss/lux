@@ -16,15 +16,17 @@
 
 
     <div class="banner">
+		<script id="banner" type="text/html">
+		{{each banner as value}}
+		<li>
+			<a href="{{value.link}}"><img src="{{value.src}}" alt=""></a>
+		</li>
+		{{/each}}
+
+		</script>
         <div class="content">
             <ul class="slidImg">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
+
             </ul>
             <ul class="slidNav">
                 <li style="background: red"></li>
@@ -47,29 +49,30 @@
 			<div class="flagship_title">
 				<img src="rec/images/mainx_brandship.png" alt="">
 			</div>
+			<script type="text/html" id="flagship1" >
+				{{each flagship as value}}
+				<li>
+					<a href="{{value.link}}">
+						<img src={{value.src}} alt="" />
+					</a>
+					<div class="flagship_box">
+						<img src={{value.smallSrc}} />
+						<br>
+						<span falgship_line></span>
+						<p>{{value.cName}}</p>
+						<p>{{value.eName}}</p>
+					</div>
+				</li>
+				{{/each}}
+			</script>
 			<ul class="flagship_list">
-				<scirpt id="flagship1" type="text/html">
-					{{each flagship as value}}
-						<li>
-							<a href="{{value.link}}">
-								<img data-src={{value.src}} alt="" />
-							</a>
-							<div class="flagship_box">
-								<img data-src={{value.smallSrc}} />
-								<br>
-								<span falgship_line></span>
-								<p>{{value.cName}}</p>
-								<p>{{value.eName}}</p>
-							</div>
-						</li>
-					{{/each}}
-				</scirpt>
+
 			</ul>
 			<div class="hotStore_title">
 				<img src="rec/images/hotstore_t.jpg" alt="">
 			</div>
 			<ul class="hotStore_list">
-				<scrip id="hotStore" type="text/html">
+				<script id="hotStore" type="text/html">
 					{{each hotStore as value}}
 					<li>
 						<a href="{{value.link}}"><img src="{{value.src}}" alt="sorry"></a>
@@ -81,7 +84,7 @@
 					</li>
 
 					{{/each}}
-				</scrip>
+				</script>
 			</ul>
             <div class="storeSame_title">
                 <img src="rec/images/storesametitle.jpg" alt="">

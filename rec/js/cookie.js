@@ -6,7 +6,8 @@ function loginInit() {
     flagLogin=true;
     $('.login a').html(userInfo);
     $('.logOut').html('<a href="javascript:0;" onclick="logOutInit()">退出</a>');
-    var allGoods=JSON.parse(getCookie('goods'));
+    console.log(getCookie('goods')?getCookie('goods'):'');
+    var allGoods=JSON.parse(getCookie('goods')?getCookie('goods'):'[]');
     var allNum=0;
     allGoods.forEach(function(value){
         allNum+=value.num;
@@ -45,18 +46,27 @@ function login() {
 function verify() {
     var username=$('.loginBox').find('input:eq(0)').val(),
         psw=$('.loginBox').find('input:eq(1)').val();
-    $.post("rec/data/userData.php",{username:username,password:psw},function(result){
+    // $.post("rec/data/userData.php",{username:username,password:psw,type:"init"});
+    $.post("rec/data/userData.php",{username:username,password:psw,type:"login"},function(result){
         console.log(result);
         if(result){
             alert('成功');
             setCookie("name",username);
             $('.login a').html(username);
-            var allGoods=JSON.parse(getCookie('goods'));
+            var allGoods=JSON.parse(getCookie('goods')?getCookie('goods'):'[]');
             var allNum=0;
             allGoods.forEach(function(value){
                 allNum+=value.num;
             });
-            $('#car_num').html(allNum);
+            loginInit();
+
+
+            $('.loginBox').css({
+                display:'none'
+            });
+            $('.cover').css({
+                display:'none'
+            });
             return true;
 
         }else{

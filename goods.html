@@ -15,19 +15,21 @@
 <div class="topContent"></div>
 <div class="goodsDetail">
     <div class="setting1 clearfix">
+        <div class="goodsDetail clearfix">
 
+        </div>
         <script id="goodsDetail" type="text/html">
             <div class="glass flt">
                 <div id="glassContent">
                     <div id="middleBox">
                         <div class="coverContent">
-                            <img src="rec/images/150313182024_387x490.JPG" alt="">
+                            <img src="{{src}}" alt="">
                             <div id="cover"></div>
                         </div>
 
                     </div>
                     <div id="largeBox" >
-                        <img src="rec/images/150313182024_387x490.JPG" alt="">
+                        <img src="{{src}}" alt="">
                     </div>
                     <div id="smallBox" class="clearfix">
                         <div class="btn">
@@ -38,10 +40,28 @@
                                 <img src="{{src}}" alt="">
                             </li>
                             <li>
+                                {{if src1}}
                                 <img src="{{src1}}" alt="">
+                                {{/if}}
+
                             </li>
                             <li>
+                                {{if src2}}
                                 <img src="{{src2}}" alt="">
+                                {{/if}}
+
+                            </li>
+                            <li>
+                                {{if src3}}
+                                <img src="{{src3}}" alt="">
+                                {{/if}}
+
+                            </li>
+                            <li>
+                                {{if src4}}
+                                <img src="{{src4}}" alt="">
+                                {{/if}}
+
                             </li>
                         </ul>
 
@@ -169,6 +189,91 @@
                 </ul>
             </div>
         </script>
+
+
+        <div class="goodsImg clearfix">
+            <div class="goodsImgLeft flt">
+                <div class="goodsImgNavHead">
+                    <span>商品详情</span>
+                    <span>尺码参照</span>
+                    <span>关于评价</span>
+                    <span>关于第五大道</span>
+                </div>
+                <ul class="goodsImgNav clearfix">
+                    <li>
+                        <span class="active"></span><br>
+                        <a href="#goodOverseas">代购说明</a>
+                    </li>
+                    <li>
+                        <span></span><br>
+                        <a href="#goodStory">品牌故事</a>
+                    </li>
+                    <li>
+                        <span></span><br>
+                        <a href="">商品信息</a>
+                    </li>
+                    <li>
+                        <span></span><br>
+                        <a href="">商品展示</a>
+                    </li>
+                    <li>
+                        <span></span><br>
+                        <a href="">订单说明</a>
+                    </li>
+                    <li>
+                        <span></span><br>
+                        <a href="">补偿说明</a>
+                    </li>
+                    <li>
+                        <span></span><br>
+                        <a href="">常见问题</a>
+                    </li>
+                    <li>
+                        <span></span><br>
+                        <a href="">保养说明</a>
+                    </li>
+                </ul>
+                <div id="goodOverseas">
+                    <img src="rec/images/oversea1.jpg" alt="">
+                    <img src="rec/images/oversea2.jpg" alt="">
+                </div>
+                <div id="goodStory">
+                    <img src="rec/images/oversea1.jpg" alt="">
+                    <img src="rec/images/oversea2.jpg" alt="">
+                </div>
+            </div>
+            <div class="goodsImgRight frt">
+                <ul>
+                    <li><img src="rec/images/download_x.jpg" alt=""></li>
+                    <li><img src="rec/images/media.jpg" alt=""></li>
+                </ul>
+                <div>
+                    <h2>同品牌推荐</h2>
+                    <dl>
+                        <dt><img src="rec/images/12615_thumb_G_1298012181757.jpg" alt=""></dt>
+                        <dd>丁香紫漆皮甜美手工衍缝手袋</dd>
+                        <dd>¥ 10800</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="rec/images/12615_thumb_G_1298012181757.jpg" alt=""></dt>
+                        <dd>丁香紫漆皮甜美手工衍缝手袋</dd>
+                        <dd>¥ 10800</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="rec/images/12615_thumb_G_1298012181757.jpg" alt=""></dt>
+                        <dd>丁香紫漆皮甜美手工衍缝手袋</dd>
+                        <dd>¥ 10800</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="rec/images/12615_thumb_G_1298012181757.jpg" alt=""></dt>
+                        <dd>丁香紫漆皮甜美手工衍缝手袋</dd>
+                        <dd>¥ 10800</dd>
+                    </dl>
+                </div>
+
+
+            </div>
+        </div>
     </div>
 
 </div>
